@@ -3,7 +3,7 @@
 </head>
 
 <html>
-        <form class = "formRegisto" action="formRegisto.php" method="post">
+        <form class = "formRegisto" action="../acoes/actionRegisto.php" method="post">
             <label for="name">Nome:</label>
             <input type="text" id="nome" name="nome">
             <br>

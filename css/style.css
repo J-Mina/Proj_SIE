@@ -149,10 +149,12 @@
 .display_line{
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .element{
   position: relative;
+  z-index: 1;
 }
 
 .image{
@@ -287,6 +289,7 @@ nav[role="bottom_bar"] {
   vertical-align: middle;
   box-sizing: border-box;
   padding: 0 100px;
+  z-index: 3;
 }
 
 nav[role="bottom_bar"] .bottom_bar_text {
@@ -327,6 +330,7 @@ nav[role="bottom_bar"] ul li a:hover {
   padding-left: 100px;
   padding-right: 100px;
   font-size: 15px;
+  z-index: 1;
 }
 
 .primeiroparagrafo {

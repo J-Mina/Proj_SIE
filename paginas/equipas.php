@@ -54,7 +54,7 @@
           
           <?php include 'formPesquisaEquipas.php' ?>
 
-          <br>
+          <!-- <br>
 
           <div class = "display_line">
                <div class = "element">
@@ -102,7 +102,11 @@
                     </div>
                </div>
 
-          </div>
+          </div> -->
+
+          <br>
+
+          <?php include '../acoes/actionGetEquipas.php' ?>
 
      </div>
      <!-- <div class="equipas">

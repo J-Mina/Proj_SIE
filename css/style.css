@@ -1,0 +1,705 @@
+@font-face {
+    src: url(../fonte/Bungee-Regular.ttf);
+    font-family: Bungee;
+  }
+
+/*global rules*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Bungee;
+}
+
+/* Title */
+.top_bar{
+  height: 150px;
+  background-color: #737373;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+    
+}
+
+.titulo{
+  color: #FFDE59;
+  font-size: 33px;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+/* Login form -->*/
+
+.formLogin input[type=text]{
+  width: 120px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.formLogin input[type=password]{
+  width: 120px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.formLogin label{
+  color: #FFDE59;
+}
+
+.formLogin input[type = submit]{
+  background-color: #FFDE59;
+  color: #737373;
+  border: 0px;
+  height: 28px;
+  width: 60px;
+  border-radius: 30px;
+  text-align: center;   
+}
+
+.formLogin input:hover[type=submit]{
+  background-color: #737373;
+  color: #FFDE59;
+  border: 2px solid #FFDE59;
+}
+
+/* Form pesquisa Jogadores*/
+
+.formPesquisaJogadores{
+  display: flex;
+  justify-content: left;
+  text-align: center;
+}
+
+.formPesquisaJogadores input[type=text]{
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 200px;
+  height: 40px
+}
+
+.formPesquisaJogadores input[type=submit]{
+  background-color: white;
+  color: #737373;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 100px;
+  height: 40px
+}
+
+.formPesquisaJogadores input:hover[type=submit]{
+  background-color: #737373;
+  color: #FFDE59;
+  border: 2px solid #FFDE59;
+  cursor: pointer;
+}
+
+.formPesquisaJogadores select{
+  background-color: #a6a6a6;
+  color: #737373;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 200px;
+  height: 40px
+}
+
+.formPesquisaJogadores option{
+  color: #737373;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 100px;
+  height: 40px
+}
+
+/* Form Registar*/
+
+.formRegisto input[type=text]{
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 200px;
+  height: 30px;
+  
+}
+
+.formRegisto input[type=password]{
+  width: 200px;
+  height: 30px;
+  border: 2px solid gray;
+  border-radius: 30px;
+}
+
+.formRegisto input[type=submit]{
+  width: 200px;
+  height: 30px;
+  border: 2px solid gray;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.formRegisto input:hover[type=submit]{
+  background-color: #737373;
+  color: #FFDE59;
+  border: 2px solid #FFDE59;
+  align-items: center;
+}
+
+/*display equipas*/
+
+.display_line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.element{
+  position: relative;
+}
+
+.image{
+  text-align: center;
+  align-items: center;
+  color: #737373;
+  height: 300px;
+  width: 300px;
+  background-color: #FFDE59;
+  border: 2px solid gray;
+}
+
+.element:hover{
+  opacity: 0.5;
+}
+
+.element img{
+  padding-top: 20px;
+  height: 70%;
+  width: 70%;
+}
+
+.button_over{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.element:hover .button_over{
+  opacity: 1;
+}
+
+.button_over a{
+  background-color: white;
+  color: #737373;
+  text-decoration: none;
+}
+
+
+
+/*Navigation bar*/
+
+.top_nav{
+    height: 70px;
+    background-color:#FFDE59;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.top_nav button{
+    width: 250px;
+    font-size: 17px;
+    height: 45px;
+    padding: 0px 35px;
+    background-color: #a6a6a6;
+    border: 2px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+
+.top_nav button:hover {
+    background-color: rgba(115, 115, 115, 1);
+}
+
+.dropdown-button { 
+    background-color: #0000b3; 
+    color: white; 
+    padding: 16px; 
+    font-size: 16px; 
+    border: none;
+    text-decoration:none;
+} 
+.dropdown { 
+    position: relative; 
+    display: inline-block;
+    text-decoration:none;
+} 
+
+.dropdown-list { 
+    display: none; 
+    position: absolute; 
+    color: white;
+    background-color: #a6a6a6;
+    border: 2px solid gray;
+    border-radius: 15px;
+    min-width: 300px;
+    z-index: 1;
+    text-decoration:none;
+    text-align: center;
+} 
+
+.dropdown-list a {
+    height: 30;
+    padding: 8px 12px; 
+    text-decoration: none;
+    color: white; 
+    display: block;
+} 
+
+.dropdown-list a:hover { 
+    background-color: rgba(115, 115, 115, 1);
+    border: 2px solid gray;
+    border-radius: 15px;
+} 
+
+.dropdown:hover .dropdown-list { 
+    display: block; 
+} 
+
+.dropdown:hover .dropdown-button { 
+    background-color: rgba(115, 115, 115, 1); 
+} 
+
+/* Footer */
+
+nav[role="bottom_bar"] {
+  height: 30px;
+  background-color: #737373;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 0 100px;
+}
+
+nav[role="bottom_bar"] .bottom_bar_text {
+  color: #FFDE59;
+  float: left;
+  font-size: 20px;
+  padding: 0;
+  line-height: 30px;
+}
+
+nav[role="bottom_bar"] ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav[role="bottom_bar"] ul li a {
+  vertical-align: top;
+  line-height: 30px;
+  color: #FFDE59;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+nav[role="bottom_bar"] ul li a:hover {
+  transition: all 0.3s ease 0s;
+  background-color: #FFDE59;
+  color: #737373;
+}
+
+/*Conteudo home*/
+
+.conteudo {
+  height: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 15px;
+}
+
+.primeiroparagrafo {
+  text-align: justify;
+  float: left;
+  color: #737373;
+}
+
+.primeiroparagrafo a {
+  color: #737373;
+}
+
+.primeiroparagrafo a:hover {
+  color: #FFDE59;
+}
+
+.primeiroparagrafo img {
+  float: right;
+  height: 250px;
+  object-fit: cover;
+  padding-left: 70px;
+}
+
+#subtitulos {
+  color: #FFDE59;
+  font-size: 25px;
+}
+
+#subtitulos1 {
+  text-align: right;
+  color: #FFDE59;
+  font-size: 25px;
+}
+
+#subtitulos2 {
+  color: #FFDE59;
+  font-size: 25px;
+  padding-left: 100px;
+}
+
+#texto_junta {
+  text-align: right;
+  color: #737373;
+  padding-bottom: 30px;
+  overflow-x: hidden;
+}
+
+
+/*Pagina Classificação*/
+
+.pagina_classificacao {
+  display: flex;
+  height: 100%;
+  font-size: 14px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.classificacao {
+  width: 55%;
+  text-align: center;
+}
+
+.calendario {
+  width: 45%;
+  text-align: center;
+}
+
+.classificacao table {
+  width: 85%;
+  margin-top: 7%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.classificacao th {
+  background-color: #737373;
+}
+
+.classificacao tr:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+
+.pagina_classificacao .calendario .prox_jogos {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagina_classificacao .calendario .prox_jogos .jogo {
+  background-color: #FFDE59;
+  width: 55%;
+  height: 40%;
+  border: 1px solid #FFDE59;
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.jogo:hover {
+  transform: scale(1.15);
+}
+
+.pagina_classificacao a {
+  color: black;
+}
+
+.pagina_classificacao a:hover {
+  color: #737373;
+}
+
+.pagina_classificacao .calendario .prox_jogos .jogo img {
+  height: 110px;
+}
+
+.pagina_classificacao .calendario .prox_jogos .jogo p {
+  margin: -1em;
+}
+
+/*Pagina equipas*/
+
+.equipas {
+  display: flex;
+  height: 90%;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.equipas a {
+  text-decoration: none;
+}
+
+.equipa1 {
+  width: 20%;
+  height: 65%;
+  position: relative;
+  background-color: #FFDE59;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  border: 1px solid #737373;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.img_nome {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.equipa1 img {
+  float: none;
+  height: 65%;
+}
+
+.img_nome img {
+  float: none;
+  height: 65%;
+}
+
+.equipa1:hover {
+  opacity: 0.5;
+}
+
+.botao {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.botao button {
+  margin: auto 0;
+  background-color: #a6a6a6;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.botao button:hover {
+  background-color: rgba(115, 115, 115, 1);
+}
+
+.element:hover .aparece_botao {
+  margin: auto;
+  margin-top: 40%;
+  display: block;
+  cursor: pointer;
+}
+
+
+/*Pagina plantel*/
+
+.pagina_plantel {
+  padding-bottom: 4%;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pagina_plantel a {
+  color: black;
+}
+
+.pagina_plantel table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  border: 3px solid #FFDE59;
+  border-collapse: collapse;
+}
+
+.pagina_plantel tr, td, th {
+  text-align: center;
+  border: solid black;
+  border-collapse: collapse;
+}
+
+.pagina_plantel th {
+  background-color: #737373;
+  border: none;
+}
+
+.pagina_plantel tr:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+
+.pagina_plantel img {
+  width: 16%;
+}
+
+.button_back {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button_back button {
+  background-color: #FFDE59;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 0 30px;
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+}
+
+.button_back button:hover {
+  opacity: 0.5;
+}
+
+/*Pagina Jogador*/
+
+.pagina_jogador {
+  height: 100%;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.informacao_jogador {
+  width: 65%;
+}
+
+.imagem_jogador {
+  margin-top: 4%;
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  background-image: url("../imagens/casillas.jpeg");
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.informacao_jogador table {
+  width: 65%;
+  border-collapse: collapse;
+  border: none;
+  margin-top: 12%;
+}
+
+.informacao_jogador td, tr {
+  text-align: left;
+  border: none;
+}
+
+.pagina_jogador a {
+  color: #737373;
+}
+
+.pagina_jogador a:hover {
+  color: #FFDE59;
+}
+
+/*Pagina contacto*/
+
+.imagem_contacto_1 {
+  margin-top: 4%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-image: url("../imagens/miguel.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+
+.imagem_contacto_2 {
+  margin-top: 4%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background-image: url("../imagens/joao.jpg");
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+
+/*Pagina Join*/
+
+.join_cont {
+  color: #737373;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.join_cont a{
+  background-color: #FFDE59;
+  border: 2px solid gray;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 0 30px;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.join_cont a:hover{
+  background-color: #737373;
+  border: 2px solid gray;
+
+}
+

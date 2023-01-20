@@ -20,7 +20,6 @@
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
-    
 }
 
 .titulo{
@@ -379,7 +378,6 @@ nav[role="bottom_bar"] ul li a:hover {
 
 .pagina_classificacao {
   display: flex;
-  height: 100%;
   font-size: 14px;
   padding-left: 100px;
   padding-right: 100px;
@@ -703,3 +701,83 @@ nav[role="bottom_bar"] ul li a:hover {
 
 }
 
+.pagina_candidatura {
+  display: flex;
+  font-size: 14px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.info_candidatura {
+  width: 50%;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jogadores_candidatura{
+  width: 50%;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formCandidatura input[type=text]{
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.formCandidatura input[role="input_grande"][type=text]{
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 100%;
+  height: 150px;
+  text-align: start;
+  white-space: pre-wrap;
+}
+
+
+.formCandidatura input[type=password]{
+  width: 200px;
+  height: 30px;
+  border: 2px solid gray;
+  border-radius: 30px;
+}
+
+.info_candidatura td{
+  color:#737373;
+  text-align: right;
+  border: none;
+  padding: 15px;
+
+}
+
+.jogadores_candidatura td{
+  color:#737373;
+  text-align: right;
+  border: none;
+  padding: 15px;
+
+}
+
+
+.jogadores_candidatura button {
+  background-color: #FFDE59;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 0 30px;
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+}
+
+.jogadores_candidatura button:hover {
+  opacity: 0.5;
+}

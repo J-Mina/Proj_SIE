@@ -1,5 +1,7 @@
 <?php
 
+    include "../baseDados/connect.php";
+
     $name = $_POST['nome'];
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -11,18 +13,32 @@
         if($password != "" && strlen($password) >= 5){
 
         }else{
-        $problem = "Password has to be at least 5 characters long";
+        $problem = "Password deve conter no mínimo 5 caracteres !";
         } 
     }else{
-        $problem = "Passwords Dont Match";
+        $problem = "As passwords não correspondem!";
     }
 
     if($problem !=""){
-        header("Location: ../paginas/registar.php");
+
+        $query = "SELECT * from utilizador where username = '$username'";
+        $result = pg_exec($conn, $query);
+        $count = pg_num_rows($result);
+
+        if($count == 1){
+            $problem = "Username já está a ser utilizado!";
+        }
+
+        header("Location: ../paginas/registar.php?problem=".$problem);
         
      }else{
-        //"INSERT INTO utilizadores (name, username, password) VALUES ($name, $username, $password)"
-        header("Location: ../paginas/index.php");
+
+        $query = "INSERT INTO utilizador (username, password, permissoes) VALUES('$username','$password', 4 )";
+        pg_exec($conn, $query);
+
+        pg_close($conn);
+
+        header("Location: ../paginas/index.php?pop=1");
     }
 
     exit;

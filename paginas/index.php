@@ -1,5 +1,16 @@
 <?php include 'inc/header.php' ?>
 
+        
+
+        <?php
+        if(isset($_GET['pop'])){
+            echo '<script type="text/javascript">
+                    window.onload = function () { alert("Conta Criada com Sucesso! Procede ao Login para te poderes candidatar."); } 
+                    </script>';
+        }
+
+        ?>
+
         <div class="conteudo">
 
             <h2 id="subtitulos"> Quem somos? </h2>

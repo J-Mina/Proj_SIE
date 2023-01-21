@@ -6,7 +6,6 @@ $query = "SELECT * FROM jogador,posicao,equipa where jogador.id_posicao = posica
 $result = pg_query($conn, $query);
 
 
-
 echo "<table class=\"classificacao\" border = 0 >";
 echo      "<tr>";
 echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th>";

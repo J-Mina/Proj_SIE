@@ -3,7 +3,7 @@
 
 <head>
      <title>Classificação</title>
-     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -29,7 +29,9 @@
                 </div> 
             </div> 
             <div><a href="classificacao.php"><button><i class="fa fa-trophy" aria-hidden="true"></i> Classificação </button></a></div>
-            <div><a href="join.php"><button><i class="fa fa-mouse-pointer" aria-hidden="true"></i> Junta-te a Nós </button></a></div>
+
+            <?php include "buttonChoice.php"?>
+
             <div><a href="candidatarEquipa.php"><button><i class="fa fa-download" aria-hidden="true"></i> Download</button></a></div>
             <div><a href="contactos.php"><button><i class="fa fa-phone" aria-hidden="true"></i> Contactos</button></a></div>
      </div>

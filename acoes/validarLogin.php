@@ -3,24 +3,16 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if($password == $conf_password){
-        if($password != "" && strlen($password) >= 5){
+    include "../baseDados/connect.php";
 
-        }else{
-        $problem = "Password has to be at least 5 characters long";
-        } 
-    }else{
-        $problem = "Passwords Dont Match";
+    $result = pg_query($conn, "SELECT * FROM utilizador WHERE username='$username' AND password='$password'");
+    $count = pg_num_rows($result);
+    if($count == 1) {
+        session_start();
+        $_SESSION['username'] = $username;
+        header("location:../paginas/index.php");
+    } else {
+        echo "Invalid Login";
     }
-
-    if($problem !=""){
-        header("Location: ../paginas/registar.php");
-        
-     }else{
-        //"INSERT INTO utilizadores (name, username, password) VALUES ($name, $username, $password)"
-        header("Location: ../paginas/index.php");
-    }
-
-    exit;
-   
+    pg_close($conn);
 ?>

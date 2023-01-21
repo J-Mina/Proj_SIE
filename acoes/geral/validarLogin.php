@@ -3,7 +3,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    include "../baseDados/connect.php";
+    include "../../baseDados/connect.php";
 
     $result = pg_query($conn, "SELECT * FROM utilizador WHERE username='$username' AND password='$password'");
     $count = pg_num_rows($result);

@@ -7,6 +7,4 @@ pg_exec($conn, $query);
 if (!$conn) {
     die("Error connecting to the database");
 }
-
-
 ?>

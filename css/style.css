@@ -628,7 +628,7 @@ nav[role="bottom_bar"] ul li a:hover {
 }
 
 .informacao_jogador table {
-  width: 65%;
+  width: 70%;
   border-collapse: collapse;
   border: none;
   margin-top: 12%;
@@ -637,6 +637,23 @@ nav[role="bottom_bar"] ul li a:hover {
 .informacao_jogador td, tr {
   text-align: left;
   border: none;
+}
+
+
+
+.edita_button {
+  background-color: green;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 0 30px;
+  font-size: 13px;
+  transition: all 0.3s ease 0s;
+}
+
+.edita_button:hover {
+  opacity: 0.5;
 }
 
 .pagina_jogador a {

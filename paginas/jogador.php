@@ -1,7 +1,7 @@
 <?php include 'inc/header.php'; 
       include "../baseDados/connect.php";
 
-     $query="SELECT nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa
+     $query="SELECT id_jogador,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa
              FROM jogador
              JOIN posicao ON jogador.id_posicao = posicao.id_posicao
              JOIN equipa ON jogador.id_equipa = equipa.id_equipa 
@@ -23,7 +23,6 @@
                <div class="button_back">
                     <a href="plantel.php"><button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</button></a>
                </div>
-
                
                <table>
                     <tr>
@@ -51,6 +50,10 @@
                          <td style="color:#737373"><?php echo $player['nome_equipa']; ?></td>
                     </tr>
                </table>
+
+               <div class="button_back">
+                    <a href="formEditaJogador.php"><button>Editar info</button></a>
+               </div>
           </div>
 
      </div>

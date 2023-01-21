@@ -6,7 +6,7 @@
     session_start();
     if(!isset($_SESSION['username'])) {
 ?>
-    <form class = "formLogin" action="../acoes/validarLogin.php" method="post">
+    <form class = "formLogin" action="../acoes/geral/validarLogin.php" method="post">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username">
         &emsp;
@@ -23,7 +23,7 @@
         echo "Bem Vindo, ".$logged_user."!";
     ?>  
 
-    <form method="post" action="../acoes/actionLogout.php">
+    <form method="post" action="../acoes/geral/actionLogout.php">
         <input type="submit" name="logout" value="Logout">
     </form>
 <?php

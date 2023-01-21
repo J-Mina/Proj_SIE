@@ -1,6 +1,6 @@
 <?php
 
-    include "../baseDados/connect.php";
+    include "../../baseDados/connect.php";
 
     $name = $_POST['nome'];
     $username = $_POST['username'];
@@ -29,7 +29,7 @@
             $problem = "Username já está a ser utilizado!";
         }
 
-        header("Location: ../paginas/registar.php?problem=".$problem);
+        header("Location: ../../paginas/registar.php?problem=".$problem);
         
      }else{
 
@@ -38,7 +38,7 @@
 
         pg_close($conn);
 
-        header("Location: ../paginas/index.php?pop=1");
+        header("Location: ../../paginas/index.php?pop=1");
     }
 
     exit;

@@ -1,6 +1,6 @@
 <?php
 
-    include "../acoes/checkPermissions.php";
+    include "../acoes/geral/checkPermissions.php";
 
 
     if($permission == 4){

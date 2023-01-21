@@ -1,7 +1,17 @@
-<?php include 'inc/header.php' ?>
+<?php include 'inc/header.php'; 
+      include "../baseDados/connect.php";
 
+     $query="SELECT nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa
+             FROM jogador
+             JOIN posicao ON jogador.id_posicao = posicao.id_posicao
+             JOIN equipa ON jogador.id_equipa = equipa.id_equipa 
+             WHERE id_jogador=5";
 
-     <h2 id="subtitulos2">Iker Casillas</h2>
+     $result = pg_query($conn,$query);
+     $player = pg_fetch_assoc($result);
+?>
+
+     <h2 id="subtitulos2"><?php echo $player['nome_jogador']; ?></h2>
 
 
      <div class="pagina_jogador">
@@ -17,20 +27,28 @@
                
                <table>
                     <tr>
-                         <td><b>Nome completo:</b></td>
+                         <td><b>Nome:</b></td>
                          <td style="color:#737373"><?php echo $player['nome_jogador']; ?></td>
                     </tr>
                     <tr>
-                         <td><b>Data de nascimento:</b></td>
+                         <td><b>Idade:</b></td>
                          <td style="color:#737373"><?php echo $player['idade']; ?></td>
                     </tr>
                     <tr>
-                         <td><b>Posição:</b></td>
+                         <td><b>Altura (cm):</b></td>
                          <td style="color:#737373"><?php echo $player['altura']; ?></td>
                     </tr>
                     <tr>
                          <td><b>Clubes anteriores:</b></td>
                          <td style="color:#737373"><?php echo $player['clube_ant']; ?></td>
+                    </tr>
+                    <tr>
+                         <td><b>Posicao:</b></td>
+                         <td style="color:#737373"><?php echo $player['posicao']; ?></td>
+                    </tr>
+                    <tr>
+                         <td><b>Equipa atual</b></td>
+                         <td style="color:#737373"><?php echo $player['nome_equipa']; ?></td>
                     </tr>
                </table>
           </div>

@@ -43,6 +43,24 @@
                <li><a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
           </ul>
      </nav>
+    
+     <?php
+          $conn = pg_connect("host=db.fe.up.pt dbname=sie2250 user=sie2250 password=NIQHxBGU");
+          $query = "set schema 'sundayleague'";	
+          pg_exec($conn, $query);
+
+          if (!$conn) {
+               die("Error connecting to the database");
+          }
+
+          $query="SELECT nome_jogador,idade, altura, clube_ant 
+                    FROM jogador 
+                    WHERE id_jogador=2";
+          
+          $result = pg_query($conn,$query);
+          $player = pg_fetch_assoc($result);
+
+     ?>
 
      <h2 id="subtitulos2">Iker Casillas</h2>
 
@@ -57,28 +75,25 @@
                     <a href="plantel.php"><button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</button></a>
                </div>
 
-               <table class="informacao_jogador">
+               
+               <table>
                     <tr>
                          <td><b>Nome completo:</b></td>
-                         <td style="color:#737373">Iker Casillas Fernández</td>
+                         <td style="color:#737373"><?php echo $player['nome_jogador']; ?></td>
                     </tr>
                     <tr>
                          <td><b>Data de nascimento:</b></td>
-                         <td style="color:#737373">20 Maio 1981</td>
+                         <td style="color:#737373"><?php echo $player['idade']; ?></td>
                     </tr>
                     <tr>
                          <td><b>Posição:</b></td>
-                         <td style="color:#737373">Guarda-Redes</td>
+                         <td style="color:#737373"><?php echo $player['altura']; ?></td>
                     </tr>
                     <tr>
                          <td><b>Clubes anteriores:</b></td>
-                         <td style="color:#737373">Real madrid, Porto</td>
+                         <td style="color:#737373"><?php echo $player['clube_ant']; ?></td>
                     </tr>
-
                </table>
-
-
-
           </div>
 
      </div>

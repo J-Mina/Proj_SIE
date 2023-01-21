@@ -93,7 +93,10 @@
                
                </form> 
           
-               <button id="addPlayerButton">Adicionar Jogador</button>        
+               <div class="button_add_remove">
+                    <button id="addPlayerButton"><i class="fa fa-plus-circle" aria-hidden="true"></i></button> 
+                    <button id="removePlayerButton"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+               </div>        
           </div>
      </div>
 
@@ -107,6 +110,18 @@
                var inputCell = newRow.insertCell();
                inputCell.innerHTML = '<input type="text" id="new_jogador" name="new_jogador">';
           }
+
+          function removeRow(row) {
+               var table = document.getElementById("playersTable");
+               table.deleteRow(row.rowIndex);
+          }
+
+          var removeButton = document.getElementById("removePlayerButton");
+          removeButton.addEventListener("click", function() {
+          removeRow(this.parentNode.parentNode);
+          });
+
+
           var button = document.getElementById("addPlayerButton");
           button.addEventListener("click", addRow);
      </script>

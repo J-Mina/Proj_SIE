@@ -772,14 +772,18 @@ nav[role="bottom_bar"] ul li a:hover {
 
 
 .jogadores_candidatura button {
-  background-color: #FFDE59;
+  background-color: red;
   border: 2px solid gray;
-  border-radius: 15px;
+  border-radius: 30px;
   cursor: pointer;
   color: #FFFFFF;
-  padding: 0 30px;
-  font-size: 13px;
+  padding: 0 15px;
+  font-size: 20px;
   transition: all 0.3s ease 0s;
+}
+
+#addPlayerButton{
+  background-color: #32CD32;
 }
 
 .jogadores_candidatura button:hover {

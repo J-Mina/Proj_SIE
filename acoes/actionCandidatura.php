@@ -68,7 +68,6 @@
     /**Inserir Equipa */
 
     /**Adicionar id do user */
-
     $username = $_SESSION['username'];
     $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
     $row = pg_fetch_row($result, 0);

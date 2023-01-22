@@ -92,9 +92,7 @@
 </body>
 
 <?php 
-
      include "inc/footer.php"
-
 ?>
 
 

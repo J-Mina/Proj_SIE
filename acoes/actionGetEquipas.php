@@ -23,11 +23,11 @@ while($i< $numRows){
     $row = pg_fetch_row($result, $i);
 
     $nome = $row[1];
-    $img = $row[7];
+    $img = $row[6];
 
     echo "<div class=\"element\">"; 
     echo    "<div class=\"image\">";
-    echo    "<img src=".$img.".png>";
+    echo    "<img src=".$img.">";
     echo    "<p>".$nome."</p>";
     echo    "</div>";
     echo    "<div class=\"button_over\">";

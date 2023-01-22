@@ -9,6 +9,18 @@
                     </script>';
         }
 
+        if(isset($_GET['pop_candidatura'])){
+            echo '<script type="text/javascript">
+                    window.onload = function () { alert("Candidatura submetida com Sucesso! Aguarde Aprovação."); } 
+                    </script>';
+        }
+
+        if(isset($_GET['pop_permissao'])){
+            echo '<script type="text/javascript">
+                    window.onload = function () { alert("Não tem permissoes para aceder a esta página."); } 
+                    </script>';
+        }
+
         ?>
 
         <div class="conteudo">

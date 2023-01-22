@@ -283,7 +283,6 @@
 nav[role="bottom_bar"] {
   height: 30px;
   background-color: #737373;
-  position: fixed;
   bottom: 0;
   width: 100%;
   vertical-align: middle;
@@ -806,4 +805,27 @@ nav[role="bottom_bar"] ul li a:hover {
 
 .jogadores_candidatura button:hover {
   opacity: 0.5;
+}
+
+.candidaturaMain{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.candidaturaMain table, tr, td{
+  border: 0;
+}
+
+.candidaturaMain tr, td{
+  padding-bottom: 5px;
+}
+
+.candidaturaMain input[type="submit"]{
+  align-items: center;
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 30px;
+  cursor: pointer;
+  
 }

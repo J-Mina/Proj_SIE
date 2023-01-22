@@ -4,11 +4,12 @@ include "../baseDados/connect.php";
 
 $query = "SELECT * FROM jogador,posicao,equipa where jogador.id_posicao = posicao.id_posicao and jogador.id_equipa=equipa.id_equipa";
 $result = pg_query($conn, $query);
+pg_close($conn);
 
 
 echo "<table class=\"classificacao\" border = 0 >";
 echo      "<tr>";
-echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th>";
+echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th><th>Editar</th>";
 echo      "</tr>";
 
 $numRows = pg_numrows($result);
@@ -18,14 +19,21 @@ while($i< $numRows){
 
     $row = pg_fetch_row($result, $i);
 
+    $id = $row[0];
     $nome = $row[1];
     $idade = $row[2];
     $altura = $row[3];
     $posicao = $row[10];
     $equipa = $row[12];
 
+
     echo "<tr>";
-    echo    "<th>".$nome."</th><th>".$idade."</th><th>".$altura."</th><th>".$posicao."</th><th>".$equipa."</th>";
+    echo    "<td>".$nome."</td>
+             <td>".$idade."</td>
+             <td>".$altura."</td>
+             <td>".$posicao."</td>
+             <td>".$equipa."</td>
+             <td><a href=\"../paginas/formEditaJogador.php?id=".$id."\"> Editar </a></td>";
     echo "</tr>";
 
     $i++;
@@ -33,6 +41,6 @@ while($i< $numRows){
 
 echo "</table>";
 
-pg_close($conn);
+
 ?> 
 

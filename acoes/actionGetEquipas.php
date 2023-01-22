@@ -31,7 +31,7 @@ while($i< $numRows){
     echo    "<p>".$nome."</p>";
     echo    "</div>";
     echo    "<div class=\"button_over\">";
-    echo    "<a href = \"plantel.php\">Ver Plantel</a>";
+    echo    "<a href = \"equipa.php\">Ver Equipa</a>";
     echo    "</div>";
     echo "</div>";
 

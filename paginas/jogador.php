@@ -1,7 +1,7 @@
 <?php include 'inc/header.php'; 
       include "../baseDados/connect.php";
 
-     $query="SELECT id_jogador,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa
+     $query="SELECT id_jogador,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa, foto_jogador
              FROM jogador
              JOIN posicao ON jogador.id_posicao = posicao.id_posicao
              JOIN equipa ON jogador.id_equipa = equipa.id_equipa 
@@ -17,7 +17,7 @@
      <div class="pagina_jogador">
 
 
-          <div class="imagem_jogador"></div>
+          <div class="imagem_jogador" style="background-image: url('<?php echo $player['foto_jogador']; ?>');"></div>
 
           <div class="informacao_jogador">
                <div class="button_back">

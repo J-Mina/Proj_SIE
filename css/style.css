@@ -604,7 +604,7 @@ nav[role="bottom_bar"] ul li a:hover {
 /*Pagina Jogador*/
 
 .pagina_jogador {
-  height: 100%;
+  
   display: flex;
   padding-left: 100px;
   padding-right: 100px;
@@ -619,7 +619,7 @@ nav[role="bottom_bar"] ul li a:hover {
   width: 400px;
   height: 350px;
   overflow: hidden;
-  background-image: url("../imagens/casillas.jpeg");
+  /*background-image: url("../imagens/casillas.jpeg");*/
   background-size: cover;
   background-position: center center;
   margin-left: auto;

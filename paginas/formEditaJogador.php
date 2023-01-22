@@ -10,8 +10,8 @@
       JOIN equipa ON jogador.id_equipa = equipa.id_equipa 
       WHERE id_jogador=5";
 
-$result = pg_query($conn,$query);
-$player = pg_fetch_assoc($result);
+     $result = pg_query($conn,$query);
+     $player = pg_fetch_assoc($result);
 ?>
 
      <h2 id="subtitulos2"><?php echo $player['nome_jogador']; ?></h2>

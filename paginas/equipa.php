@@ -5,13 +5,13 @@
              FROM equipa
              JOIN cidade ON equipa.id_cidade = cidade.id_cidade
              JOIN treinador ON equipa.id_treinador = treinador.id_treinador
-             WHERE id_equipa=3";
+             WHERE id_equipa=2";
 
      $result = pg_query($conn,$query);
      $player = pg_fetch_assoc($result);
 ?>
 
-     <h2 id="subtitulos2"><?php echo $player['nome_equipa']; echo $player['logo_equipa'] ?></h2>
+     <h2 id="subtitulos2"><?php echo $player['nome_equipa'];?></h2>
 
 
      <div class="pagina_jogador">

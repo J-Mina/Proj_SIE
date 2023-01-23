@@ -62,7 +62,6 @@
                     
                </table>
                     <input type="hidden" name="id_jogador" value="<?php echo $player['id_jogador']; ?>">
-                    
                     <input type="hidden" name="id_equipa"  value="<?php echo $player['id_equipa']; ?>">
                     <button class="edita_button" type="submit">Guardar Alterações</button>
 

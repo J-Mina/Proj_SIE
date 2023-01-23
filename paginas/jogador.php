@@ -1,7 +1,7 @@
 <?php include 'inc/header.php'; 
      include "../baseDados/connect.php";
 
-     if(!isset($_GET['id'])){
+     if(isset($_SESSION['username'])){
           $username = $_SESSION['username'];
           $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
           $row = pg_fetch_row($result, 0);
@@ -28,8 +28,6 @@
 
 
      <div class="pagina_jogador">
-
-
           <div class="imagem_jogador" style="background-image: url('<?php echo $player['foto_jogador']; ?>');"></div>
 
           <div class="informacao_jogador">
@@ -64,9 +62,11 @@
                     </tr>
                </table>
 
-               <div class="button_back">
-                    <a href="formEditaJogador.php"><button>Editar info</button></a>
-               </div>
+               <?php
+               echo "<div class=\"button_back\">
+                     <a href=\"formEditaJogador.php?id=".$id."\"><button>Editar info</button></a>
+                    </div>";
+               ?>
           </div>
 
      </div>

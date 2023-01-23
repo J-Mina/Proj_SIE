@@ -2,20 +2,7 @@
      include "../../acoes/geral/checkPermissions.php"; 
      include "../../baseDados/connect.php";
       
-
-     
-     if(isset($_SESSION['username']) && $permission == 2){
-          $username = $_SESSION['username'];
-          $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
-          $row = pg_fetch_row($result, 0);
-          $id_user = $row[0];
-          $result = pg_query($conn, "SELECT id_equipa FROM equipa WHERE id_user=$id_user");
-          $row = pg_fetch_row($result, 0);
-          $id = $row[0]; 
-
-     }else{
-       $id = $_GET['id'];
-     }   
+    $id = $_GET['id'];
      
 
      $query="SELECT id_equipa,nome as nome_equipa,data_fundacao, descricao,cidade.nome_cidade as cidade,logo_equipa, treinador.nome_treinador as treinador
@@ -39,7 +26,7 @@
           <div class="informacao_jogador">
                <?php
                     echo "<div class=\"button_back\">
-                         <a href=\"equipas.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
+                         <a href=\"listaCandidatura.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
                     </div>"
                ?>
                
@@ -69,12 +56,17 @@
 
                <?php
                     echo "<div class=\"button_back\">
-                         <a href=\"plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
+                         <a href=\"../equipa/plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
                     </div>"
                ?>
           </div>
 
-     </div>
+    </div>
+
+    <div class="aprovar_recusar">
+        <?php echo "<a href=\"../../acoes/candidatura/actionAceitarCandidatura.php?id=".$id."\"><button class =\"add\"> Aprovar <i class=\"fa fa-check\" aria-hidden=\"true\"></i></button> </a>" ?>
+        <?php echo "<a href=\"../../acoes/candidatura/actionRecusarCandidatura.php?id=".$id."\"><button class =\"remove\"> Recusar <i class=\"fa fa-times\" aria-hidden=\"true\"></i></button> </a>" ?>
+    </div>
 
 
 </body>

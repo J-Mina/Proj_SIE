@@ -27,23 +27,23 @@
                 <?php
 
                 /**Caso seja utilizador que já fez candidatura e foi aprovada */
-                }elseif($estado == 2){?>
+                }elseif($estado == 2){
 
-                        <div class="join_cont">
+                       echo "<div class=\"msg_apr_rec\">
                                 <p>A SUA CANDIDATURA Infelizmente não foi aprovada. Agradecemos desde já o seu interesse.</p>
-                                <p>Pode tentar candidatar-se novamente <a href="../action/recusarEquipa.php">aqui</a></p>
-                        </div>
+                                <p>Pode tentar candidatar-se novamente <a class=\"underline\" href=\"../../acoes/candidatura/actionVoltarACandidatar.php?id=".$id_user."\">aqui</a></p>
+                        </div>";
                         
 
-                <?php
+                
 
                 /**Caso seja utilizador que já fez candidatura e foi recusada */             
-                }elseif($estado == 1){?>
-                        <div class="join_cont">
-                                <p>A sua candidatura foi aprovada. Obrigado pela preferência, pode consultar a informação da sua equipa aqui</p>
-                                <p>Obrigado pela preferência, pode consultar a informação da sua equipa <a href="../action/ativarEquipa.php">aqui</a></p>
-                        </div>
-                <?php
+                }elseif($estado == 1){
+                        echo    "<div class=\"msg_apr_rec\">
+                                        <p>A sua candidatura foi aprovada. Obrigado pela preferência, pode consultar a informação da sua equipa aqui</p>
+                                        <p>Obrigado pela preferência, pode consultar a informação da sua equipa <a class=\"underline\" href=\"../../acoes/equipa/actionAtivarEquipa.php?id=".$id_user."\">aqui</a></p>
+                                </div>";
+
                 /**Caso seja utilizador que ainda não fez candidatura */  
                 }
 

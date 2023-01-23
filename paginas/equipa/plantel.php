@@ -28,7 +28,7 @@
                </div>"
           ?>
 
-          <img src=<?php echo $player['logo_equipa']; ?>>
+          <img src=<?php echo "../".$player['logo_equipa']; ?>>
 
           <table>
                <tr>

@@ -27,7 +27,7 @@ while($i< $numRows){
     echo    "<td>".$nome."</td>
              <td>".$data_fundacao."</td>
              <td>".$nome_treinador."</td>
-             <td><a href=\"../paginas/candidatura/formVerCandidatura.php?id=".$id."\"> <i class=\"fa fa-search\" aria-hidden=\"true\"></i></a></td>";
+             <td><a href=\"../candidatura/formVerCandidatura.php?id=".$id."\"> <i class=\"fa fa-search\" aria-hidden=\"true\"></i></a></td>";
     echo "</tr>";
 
     $i++;

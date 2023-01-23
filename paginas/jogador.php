@@ -31,9 +31,11 @@
           <div class="imagem_jogador" style="background-image: url('<?php echo $player['foto_jogador']; ?>');"></div>
 
           <div class="informacao_jogador">
-               <div class="button_back">
-                    <a href="plantel.php"><button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</button></a>
-               </div>
+               <?php
+                    echo "<div class=\"button_back\">
+                         <a href=\"plantel.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
+                    </div>"
+               ?>
                
                <table>
                     <tr>

@@ -22,6 +22,7 @@ while($i< $numRows){
 
     $row = pg_fetch_row($result, $i);
 
+    $id_equipa = $row[0];
     $nome = $row[1];
     $img = $row[5];
 
@@ -31,7 +32,7 @@ while($i< $numRows){
     echo    "<p>".$nome."</p>";
     echo    "</div>";
     echo    "<div class=\"button_over\">";
-    echo    "<a href = \"equipa.php\">Ver Equipa</a>";
+    echo    "<a href = \"equipa.php?id=".$id_equipa."\">Ver Equipa</a>";
     echo    "</div>";
     echo "</div>";
 

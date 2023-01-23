@@ -896,3 +896,57 @@ nav[role="bottom_bar"] ul li a:hover {
 .underline{
   color: #737373;
 }
+
+.loginHello{
+  display: flex;
+  color: #FFDE59;
+}
+
+.loginHello input{
+  background-color: #FFDE59;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 115%;
+  color: #737373;
+
+}
+
+.loginHello input:hover{
+  background-color: gray;
+  border: 2px solid #FFDE59;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 115%;
+  color: #FFDE59;
+
+}
+
+
+.classificacao_full {
+  width: 100%;
+  text-align: center;
+}
+
+.classificacao_full table {
+  width: 85%;
+  margin-top: 7%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.classificacao_full  th {
+  background-color: #737373;
+  color: white;
+}
+
+.classificacao_full  td {
+  border: 1px solid gray;
+}
+
+.classificacao_full  tr:nth-child(odd) {
+  background-color: #d9d9d9;
+}
+
+

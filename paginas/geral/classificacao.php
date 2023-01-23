@@ -15,9 +15,9 @@
 
 
      <div class="pagina_classificacao">
-          <div class="classificacao">
+          <div class="classificacao_full">
                <h2 id="subtitulos">classificação geral do campeonato 2022/2023</h2>
-               <table class="classificacao">
+               <table>
                     <tr>
                          <th>Nome da Equipa</th>
                          <th>Pontos</th>
@@ -32,7 +32,7 @@
           </div>
 
 
-          <div class="calendario">
+          <!-- <div class="calendario">
                <h2 id="subtitulos">Próximos Jogos</h2>
 
                <div class="prox_jogos">
@@ -54,7 +54,7 @@
                     </div>
 
                </div>
-          </div>
+          </div> -->
      </div>
 
 

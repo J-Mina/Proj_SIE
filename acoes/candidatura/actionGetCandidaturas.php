@@ -7,7 +7,7 @@ $result = pg_query($conn, $query);
 pg_close($conn);
 
 
-echo "<table class=\"classificacao\" border = 0 >";
+echo "<table class=\"classificacao_full\">";
 echo      "<tr>";
 echo          "<th>Nome da Equipa</th><th>Data de Fundação</th><th>Nome do Treinador</th><th>Ver Candidatura</th>";
 echo      "</tr>";

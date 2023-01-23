@@ -5,7 +5,7 @@
           $query="SELECT nome_jogador, equipa.nome as nome_equipa,logo_equipa,id_posicao
           FROM jogador
           JOIN equipa ON jogador.id_equipa = equipa.id_equipa
-          WHERE equipa.id_equipa=7";
+          WHERE equipa.id_equipa=8";
 
           $result = pg_query($conn,$query);
           $player = pg_fetch_assoc($result);
@@ -22,7 +22,7 @@
      <div class="pagina_plantel">
 
           <div class="button_back">
-               <a href="equipas.phps"><button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</button></a>
+               <a href="equipa.php"><button><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Voltar</button></a>
           </div>
 
           <img src=<?php echo $player['logo_equipa']; ?>>

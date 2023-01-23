@@ -14,7 +14,7 @@
                
      <div class="pagina_candidatura">
 
-        <form class = "formCandidatura" action="../acoes/candidatura/actionCandidatura.php" method="post">
+        <form class = "formCandidatura" action="../../acoes/candidatura/actionCandidatura.php" method="post">
             
         <div class="candidaturaMain">
 

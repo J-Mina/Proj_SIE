@@ -174,7 +174,7 @@
 }
 
 .element:hover{
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .element img{
@@ -199,8 +199,10 @@
 }
 
 .button_over a{
-  background-color: white;
-  color: #737373;
+  background-color: #737373;
+  border: 2px solid gray;
+  color: black;
+  border-radius: 30px;
   text-decoration: none;
 }
 

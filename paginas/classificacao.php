@@ -1,4 +1,16 @@
-<?php include 'inc/header.php' ?>
+<?php include 'inc/header.php';
+      include "../baseDados/connect.php";
+
+          $query="SELECT nome as nome_equipa, pontos
+          FROM equipa
+          ORDER BY pontos DESC";
+
+          $result = pg_query($conn,$query);
+
+          $numRows = pg_numrows($result);
+          $i=0;
+
+ ?>
 
 
 
@@ -7,33 +19,15 @@
                <h2 id="subtitulos">classificação geral do campeonato 2022/2023</h2>
                <table class="classificacao">
                     <tr>
-                         <th>equipa</th>
-                         <th>pontos</th>
-                         <th>jogos</th>
+                         <th>Nome da Equipa</th>
+                         <th>Pontos</th>
                     </tr>
-
+                    <?php while($row = pg_fetch_assoc($result)): ?>
                     <tr>
-                         <td>Chaminés às Costas FC</td>
-                         <td>15</td>
-                         <td>5</td>
+                         <td><?php echo $row['nome_equipa']; ?></td>
+                         <td><?php echo $row['pontos']; ?></td>
                     </tr>
-
-                    <tr>
-                         <td>AD Rebenta Esteios</td>
-                         <td>13</td>
-                         <td>5</td>
-                    </tr>
-
-                    <tr>
-                         <td>Estrelas cadentes FC</td>
-                         <td>11</td>
-                         <td>5</td>
-                    </tr>
-                    <tr>
-                         <td>Panteras Negras FC</td>
-                         <td>9</td>
-                         <td>5</td>
-                    </tr>
+                    <?php endwhile; ?>
                </table>
           </div>
 

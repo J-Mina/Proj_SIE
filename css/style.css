@@ -410,10 +410,16 @@ nav[role="bottom_bar"] ul li a:hover {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .classificacao th {
   background-color: #737373;
+  color: white;
+}
+
+.classificacao td {
+  border: 1px solid gray;
 }
 
 .classificacao tr:nth-child(odd) {

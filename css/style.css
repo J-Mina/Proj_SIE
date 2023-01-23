@@ -113,15 +113,20 @@
 
 /* Form Registar*/
 
-.formRegisto input[type=text]{
-  border: 2px solid gray;
-  border-radius: 30px;
-  width: 200px;
-  height: 30px;
-  
+.formRegisto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.formRegisto input[type=password]{
+
+
+.formRegisto table tr td{
+  text-align: right;
+}
+
+
+.formRegisto input{
   width: 200px;
   height: 30px;
   border: 2px solid gray;
@@ -130,16 +135,18 @@
 
 .formRegisto input[type=submit]{
   width: 200px;
-  height: 30px;
+  border-radius: 15px;
+  height: 40px;
   border: 2px solid gray;
-  border-radius: 30px;
   align-items: center;
+  transition: all 0.3s ease 0s;
+  color: white;
+  background-color: #a6a6a6;
+  cursor: pointer;
 }
 
 .formRegisto input:hover[type=submit]{
-  background-color: #737373;
-  color: #FFDE59;
-  border: 2px solid #FFDE59;
+  background-color: rgba(115, 115, 115, 1);
   align-items: center;
 }
 
@@ -637,6 +644,8 @@ nav[role="bottom_bar"] ul li a:hover {
   text-align: left;
   border: none;
 }
+
+
 
 
 

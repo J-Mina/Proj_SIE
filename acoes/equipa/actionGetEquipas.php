@@ -1,6 +1,6 @@
 <?php
 
-include "../baseDados/connect.php";
+include "../../baseDados/connect.php";
 
 $query = "SELECT * FROM equipa";
 $result = pg_query($conn, $query);
@@ -28,7 +28,7 @@ while($i< $numRows){
 
     echo "<div class=\"element\">"; 
     echo    "<div class=\"image\">";
-    echo    "<img src=".$img.">";
+    echo    "<img src= ../".$img.">";
     echo    "<p>".$nome."</p>";
     echo    "</div>";
     echo    "<div class=\"button_over\">";

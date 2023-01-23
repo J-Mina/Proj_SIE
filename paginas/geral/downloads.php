@@ -1,4 +1,4 @@
-<?php include 'inc/header.php' ?>
+<?php include '../inc/header.php' ?>
 
      <h2 id="subtitulos2">Ficheiros para download</h2>
 

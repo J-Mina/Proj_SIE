@@ -1,4 +1,4 @@
-<?php include 'inc/header.php' ?>
+<?php include '../inc/header.php' ?>
 
 
     <div class="conteudo">
@@ -6,7 +6,7 @@
 
           <div> <?php include 'formPesquisaJogadores.php' ?></div>
           <br>
-          <div class = "pagina_classificacao"><div class ="classificacao"> <?php include '../acoes/actionGetJogadores.php' ?></div></div>
+          <div class = "pagina_classificacao"><div class ="classificacao"> <?php include '../../acoes/jogador/actionGetJogadores.php' ?></div></div>
     </div>
 
      

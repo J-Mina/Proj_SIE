@@ -1,4 +1,4 @@
-<?php include 'inc/header.php' ?>
+<?php include '../inc/header.php' ?>
 
         <?php
         if(isset($_GET['pop'])){
@@ -14,7 +14,7 @@
                
      <div class="pagina_candidatura">
 
-        <form class = "formCandidatura" action="../acoes/actionCandidatura.php" method="post">
+        <form class = "formCandidatura" action="../acoes/candidatura/actionCandidatura.php" method="post">
             
         <div class="candidaturaMain">
 
@@ -92,7 +92,7 @@
 </body>
 
 <?php 
-     include "inc/footer.php"
+     include "../inc/footer.php"
 ?>
 
 

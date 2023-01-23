@@ -1,6 +1,6 @@
 <?php
 
-    include "../baseDados/connect.php";
+    include "../../baseDados/connect.php";
 
     if(!isset($_SESSION['username'])) {
         $permission = 4;

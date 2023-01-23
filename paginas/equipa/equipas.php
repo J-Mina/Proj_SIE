@@ -1,4 +1,4 @@
-<?php include 'inc/header.php' ?>
+<?php include '../inc/header.php' ?>
 
      <h2 id="subtitulos2">As nossas equipas</h2>
 
@@ -8,6 +8,6 @@
 
           <br>
 
-          <?php include '../acoes/actionGetEquipas.php' ?>
+          <?php include '../../acoes/equipa/actionGetEquipas.php' ?>
      </div>
 </body>

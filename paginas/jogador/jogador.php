@@ -1,5 +1,5 @@
-<?php include 'inc/header.php'; 
-     include "../baseDados/connect.php";
+<?php include '../inc/header.php'; 
+     include "../../baseDados/connect.php";
 
      if(isset($_SESSION['username'])){
           $username = $_SESSION['username'];
@@ -28,12 +28,12 @@
 
 
      <div class="pagina_jogador">
-          <div class="imagem_jogador" style="background-image: url('<?php echo $player['foto_jogador']; ?>');"></div>
+          <div class="imagem_jogador" style="background-image: url('<?php echo "../".$player['foto_jogador']; ?>');"></div>
 
           <div class="informacao_jogador">
                <?php
                     echo "<div class=\"button_back\">
-                         <a href=\"plantel.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
+                         <a href=\"jogadores.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
                     </div>"
                ?>
                

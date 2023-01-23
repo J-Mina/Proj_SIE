@@ -1,5 +1,5 @@
-<?php include 'inc/header.php';
-      include "../baseDados/connect.php";
+<?php include '../inc/header.php';
+      include "../../baseDados/connect.php";
 
           $query="SELECT nome as nome_equipa, pontos
           FROM equipa
@@ -38,16 +38,16 @@
                <div class="prox_jogos">
 
                     <div class="jogo">
-                         <img src="../imagens/chamines.png" alt="chamines_as_costas">
-                         <img src="../imagens/rebenta.png" alt="rebenta_esteios">
+                         <img src="../../imagens/chamines.png" alt="chamines_as_costas">
+                         <img src="../../imagens/rebenta.png" alt="rebenta_esteios">
                          <p> 12 OUT </p>
                          <p>Chaminés As costas vs rebenta esteios
                          <p>
                     </div>
 
                     <div class="jogo">
-                         <img src="../imagens/estrelas.png" alt="estrelas_cadentes">
-                         <img src="../imagens/panteras.png" alt="panteras_negras">
+                         <img src="../../imagens/estrelas.png" alt="estrelas_cadentes">
+                         <img src="../../imagens/panteras.png" alt="panteras_negras">
                          <p> 12 OUT </p>
                          <p>Estrelas Cadentes vs Panteras Negras
                          <p>

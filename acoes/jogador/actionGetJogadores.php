@@ -1,6 +1,6 @@
 <?php
 
-include "../baseDados/connect.php";
+include "../../baseDados/connect.php";
 
 $query = "SELECT * FROM jogador,posicao,equipa where jogador.id_posicao = posicao.id_posicao and jogador.id_equipa=equipa.id_equipa";
 $result = pg_query($conn, $query);
@@ -33,7 +33,7 @@ while($i< $numRows){
              <td>".$altura."</td>
              <td>".$posicao."</td>
              <td>".$equipa."</td>
-             <td><a href=\"../paginas/formEditaJogador.php?id=".$id."\"> Editar </a></td>";
+             <td><a href=\"../jogador/formEditaJogador.php?id=".$id."\"> Editar </a></td>";
     echo "</tr>";
 
     $i++;

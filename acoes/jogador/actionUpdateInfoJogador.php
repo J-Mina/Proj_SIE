@@ -1,6 +1,6 @@
 <?php
 
-    include "../baseDados/connect.php";     
+    include "../../baseDados/connect.php";     
 
     $nome_jogador = $_POST["nome_jogador"];
     $idade = $_POST["idade"];
@@ -19,7 +19,7 @@
 
     $result = pg_query_params($conn, $updateQuery, array($nome_jogador, $idade, $altura, $clube_ant,$id_posicao, $id_jogador));
 
-    header('Location: ../paginas/jogador.php?id='.$id_jogador);
+    header('Location: ../../paginas/jogador/jogador.php?id='.$id_jogador);
     exit();
    
 ?>

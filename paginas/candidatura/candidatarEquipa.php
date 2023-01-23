@@ -1,11 +1,13 @@
-<?php include 'inc/header.php' ?>
+<?php include 'inc/header.php'
+/** NOT USED*/ ?>
+
 
      
      <h2 id="subtitulos2">AGORA QUE JÁ ÉS UM DE NóS DIZ nos A INFORMAçÃO SOBRE A TUA EQUIPA</h2>
      <div class="pagina_candidatura">
 
           <div class="jogadores_candidatura">
-          <form class = "formCandidatura" action="../acoes/actionCandidatura.php" method="post">
+          <form class = "formCandidatura" action="../../acoes/candidatura/actionCandidatura.php" method="post">
                
                <table>
                     <tr>

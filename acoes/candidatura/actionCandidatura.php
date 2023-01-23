@@ -6,7 +6,7 @@
         exit();
     }
 
-    include "../baseDados/connect.php";
+    include "../../baseDados/connect.php";
 
 
     $nome_equipa = $_POST['nome_equipa'];
@@ -26,7 +26,7 @@
 
 
     if($nome_equipa == "" || $nome_cidade=="" || $nome_treinador=="" || $descricao==""|| $emblema=="" || $jogador_1 ==""|| $jogador_2==""|| $jogador_3==""|| $jogador_4==""|| $jogador_5 ==""|| $jogador_6==""|| $jogador_7==""){
-        header("Location: ../paginas/formCandidatarEquipa.php?pop=1");
+        header("Location: ../../paginas/candidatura/formCandidatarEquipa.php?pop=1");
         exit();
     }
 
@@ -101,7 +101,7 @@
 
     }
 
-    header("Location: ../paginas/index.php?pop_candidatura=1");
+    header("Location: ../../paginas/geral/index.php?pop_candidatura=1");
     exit();
 
 ?>

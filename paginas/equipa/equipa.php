@@ -1,6 +1,6 @@
-<?php include 'inc/header.php';
-     include "../acoes/geral/checkPermissions.php"; 
-     include "../baseDados/connect.php";
+<?php include '../inc/header.php';
+     include "../../acoes/geral/checkPermissions.php"; 
+     include "../../baseDados/connect.php";
       
 
      
@@ -34,7 +34,7 @@
      <div class="pagina_jogador">
 
 
-          <div class="imagem_jogador" style="background-image: url('<?php echo $player['logo_equipa']; ?>');"></div>
+          <div class="imagem_jogador" style="background-image: url('<?php echo "../".$player['logo_equipa']; ?>');"></div>
 
           <div class="informacao_jogador">
                <?php

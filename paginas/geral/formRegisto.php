@@ -5,7 +5,7 @@
 <html>
 
         <div class="formRegisto">
-            <form action="../acoes/geral/actionRegisto.php" method="post">
+            <form action="../../acoes/geral/actionRegisto.php" method="post">
                 <table>
                     <tr>
                         <td><label for="name">Nome:</label></td>

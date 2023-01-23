@@ -1,7 +1,7 @@
 
 <?php 
-     include 'inc/header.php'; 
-     include "../baseDados/connect.php";
+     include '../inc/header.php'; 
+     include "../../baseDados/connect.php";
 
      $id = $_GET['id'];
 
@@ -21,11 +21,11 @@
      <div class="pagina_jogador">
 
 
-          <div class="imagem_jogador" style="background-image: url('<?php echo $player['foto_jogador']; ?>');"></div>
+          <div class="imagem_jogador" style="background-image: url('<?php echo "../" . $player['foto_jogador']; ?>');"></div>
 
           <div class="informacao_jogador">
                               
-          <form action="../acoes/actionUpdateInfoJogador.php" method="post" >
+          <form action="../../acoes/jogador/actionUpdateInfoJogador.php" method="post" >
                <table>
                     <tr>
                          <td><b>Nome:</b></td>

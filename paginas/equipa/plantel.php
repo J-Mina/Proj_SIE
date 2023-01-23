@@ -1,5 +1,5 @@
-<?php include 'inc/header.php';
-      include "../baseDados/connect.php";
+<?php include '../inc/header.php';
+      include "../../baseDados/connect.php";
 
           $id = $_GET['id'];
 

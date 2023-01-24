@@ -32,6 +32,7 @@
 
             <?php include "buttonChoice.php"?>
 
+
             <div><a href="../geral/downloads.php"><button><i class="fa fa-download" aria-hidden="true"></i> Download</button></a></div>
             <div><a href="../geral/contactos.php"><button><i class="fa fa-phone" aria-hidden="true"></i> Contactos</button></a></div>
      </div>

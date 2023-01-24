@@ -1,8 +1,9 @@
 <?php
 
     include "../../acoes/geral/checkPermissions.php";
+    
 
-    if($permission == 4){
+    if($permission == 4 || $permission == 5){
     echo "<div><a href=\"../geral/join.php\"><button><i class=\"fa fa-mouse-pointer\" aria-hidden=\"true\"></i> Junta-te a Nós </button></a></div>";
     } elseif ($permission == 3) {
     echo "<div><a href=\"../jogador/jogador.php\"><button><i class=\"fa fa-futbol-o\" aria-hidden=\"true\"></i> Jogador </button></a></div>";

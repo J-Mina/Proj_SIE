@@ -2,8 +2,32 @@
 
 include "../../baseDados/connect.php";
 
+
+
+/*  $query = "SELECT * FROM equipa";
+$result = pg_query($conn, $query);*/
+
 $query = "SELECT * FROM equipa";
+
+if(!empty($_POST['nomeEquipa']) || !empty($_POST['fundado'])) {
+    $query .= " WHERE ";
+    $conditions = array();
+
+    if(!empty($_POST['nomeEquipa'])) {
+        $nomeEquipa = $_POST['nomeEquipa'];
+        $conditions[] = "nome = '$nomeEquipa'";
+    }
+    if(!empty($_POST['fundado'])) {
+        $fundado = $_POST['fundado'];
+        $conditions[] = "data_fundacao = '$fundado'";
+    }
+    $query .= implode(" AND ", $conditions);
+}
+
 $result = pg_query($conn, $query);
+
+
+
 
 
 

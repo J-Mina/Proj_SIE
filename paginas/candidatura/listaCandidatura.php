@@ -4,13 +4,13 @@
     <?php
         if(isset($_GET['pop_aprovada'])){
             echo '<script type="text/javascript">
-                    window.onload = function () { alert("Equipa Aprovada!."); } 
+                    window.onload = function () { alert("Equipa Aprovada!"); } 
                     </script>';
         }
 
         if(isset($_GET['pop_recusada'])){
             echo '<script type="text/javascript">
-                    window.onload = function () { alert("Equipa Aprovada!."); } 
+                    window.onload = function () { alert("Equipa Recusada!"); } 
                     </script>';
         }
     ?>

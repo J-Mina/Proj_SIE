@@ -1,5 +1,5 @@
 <?php
-
+include "../../acoes/geral/checkPermissions.php";
 include "../../baseDados/connect.php";
 
 
@@ -35,7 +35,9 @@ pg_close($conn);
 
 echo "<table class=\"classificacao_full\" border = 0 >";
 echo      "<tr>";
-echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th><th>Editar</th>";
+echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th>";
+            if($permission == 1){
+echo             "<th>Editar</th>";}
 echo      "</tr>";
 
 $numRows = pg_numrows($result);
@@ -58,8 +60,14 @@ while($i< $numRows){
              <td>".$idade."</td>
              <td>".$altura."</td>
              <td>".$posicao."</td>
-             <td>".$equipa."</td>
-             <td><a href=\"../jogador/formEditaJogador.php?id=".$id."\"> Editar </a></td>";
+             <td>".$equipa."</td>";
+
+             
+             if($permission == 1){
+    echo    "<td><a href=\"../jogador/formEditaJogador.php?id=".$id."\"> Editar </a></td>";
+
+             }
+            
     echo "</tr>";
 
     $i++;

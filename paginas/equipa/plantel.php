@@ -23,9 +23,17 @@
      <div class="pagina_plantel">
 
           <?php
-               echo "<div class=\"button_back\">
+               if(isset($_GET['cand'])){
+                    echo "<div class=\"button_back\">
+                    <a href=\"../candidatura/formVerCandidatura.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
+                    </div>";
+
+               }else{
+                    echo "<div class=\"button_back\">
                     <a href=\"equipa.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
-               </div>"
+                    </div>";
+               }
+               
           ?>
 
           <img src=<?php echo "../".$player['logo_equipa']; ?>>

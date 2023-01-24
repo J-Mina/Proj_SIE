@@ -56,7 +56,7 @@
 
                <?php
                     echo "<div class=\"button_back\">
-                         <a href=\"../equipa/plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
+                         <a href=\"../equipa/plantel.php?id=".$id."&cand=1\"><button> Ver Plantel</button></a>
                     </div>"
                ?>
           </div>

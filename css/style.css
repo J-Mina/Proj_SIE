@@ -927,6 +927,7 @@ nav[role="bottom_bar"] ul li a:hover {
 .classificacao_full {
   width: 100%;
   text-align: center;
+  text-decoration: none;
 }
 
 .classificacao_full table {
@@ -950,5 +951,6 @@ nav[role="bottom_bar"] ul li a:hover {
 .classificacao_full  tr:nth-child(odd) {
   background-color: #d9d9d9;
 }
+
 
 

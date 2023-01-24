@@ -2,8 +2,8 @@
       include "../../baseDados/connect.php";
 
           $query="SELECT nome as nome_equipa, pontos
-          FROM equipa
-          ORDER BY pontos DESC";
+          FROM equipa WHERE equipa.estado=0
+          ORDER BY pontos DESC ";
 
           $result = pg_query($conn,$query);
 

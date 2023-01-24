@@ -151,7 +151,7 @@
                
         </div>
         <br>
-
+        <br>
         <input type="submit" value="Submeter Candidatura"/>
     
         </form>

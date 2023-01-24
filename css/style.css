@@ -737,9 +737,12 @@ nav[role="bottom_bar"] ul li a:hover {
 
 .pagina_candidatura {
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   padding-left: 200px;
   padding-right: 200px;
+  font-size: 17px;
 }
 
 .info_candidatura {
@@ -757,6 +760,14 @@ nav[role="bottom_bar"] ul li a:hover {
   flex-direction: column;
   align-items: center;
 }
+
+.formCandidatura {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .formCandidatura input[type=text]{
   border: 2px solid gray;
@@ -782,6 +793,23 @@ nav[role="bottom_bar"] ul li a:hover {
   height: 30px;
   border: 2px solid gray;
   border-radius: 30px;
+}
+
+.formCandidatura input[type="submit"]{
+  margin: auto 0;
+  background-color: #a6a6a6;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  border-radius: 15px;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.formCandidatura input[type="submit"]:hover{
+  background-color: rgba(115, 115, 115, 1);
 }
 
 .info_candidatura td{
@@ -820,10 +848,35 @@ nav[role="bottom_bar"] ul li a:hover {
 }
 
 .candidaturaMain{
-  display: flex;
-  justify-content: space-between;
+
+  text-align: center;
+  margin: auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
   
 }
+
+#playersTable{
+  border-spacing: 25px 0;
+}
+
+#playersTable select{
+    padding: 0px 10px;
+    background-color: #a6a6a6;
+    border: 2px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #FFFFFF;
+    transition: all 0.3s ease 0s;
+}
+
+.botao button:hover {
+  background-color: rgba(115, 115, 115, 1);
+}
+
+
+
 
 .candidaturaMain table, tr, td{
   border: 0;
@@ -833,14 +886,7 @@ nav[role="bottom_bar"] ul li a:hover {
   padding-bottom: 5px;
 }
 
-.candidaturaMain input[type="submit"]{
-  align-items: center;
-  text-align: center;
-  border: 2px solid gray;
-  border-radius: 30px;
-  cursor: pointer;
-  
-}
+
 
 .add{
   background-color: green;

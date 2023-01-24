@@ -33,7 +33,7 @@ $result = pg_query($conn, $query);
 pg_close($conn);
 
 
-echo "<table class=\"classificacao_full\" border = 0 >";
+echo "<table class=\"classificacao_full\">";
 echo      "<tr>";
 echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th>";
             if($permission == 1){

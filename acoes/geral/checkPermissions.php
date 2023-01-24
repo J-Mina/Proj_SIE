@@ -3,7 +3,7 @@
     include "../../baseDados/connect.php";
 
     if(!isset($_SESSION['username'])) {
-        $permission = 4;
+        $permission = 5;
     } 
     else{ 
     

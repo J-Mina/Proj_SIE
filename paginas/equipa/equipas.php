@@ -11,3 +11,5 @@
           <?php include '../../acoes/equipa/actionGetEquipas.php' ?>
      </div>
 </body>
+
+<?php include '../inc/footer.php' ?>

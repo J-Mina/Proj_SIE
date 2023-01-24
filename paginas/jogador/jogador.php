@@ -65,9 +65,17 @@
                </table>
 
                <?php
-               echo "<div class=\"button_back\">
+
+               include "../../acoes/geral/checkPermissions.php"; 
+
+               if($permission > 2){
+
+                    echo "<div class=\"button_back\">
                      <a href=\"formEditaJogador.php?id=".$id."\"><button>Editar info</button></a>
                     </div>";
+               }
+
+               
                ?>
           </div>
 
@@ -75,5 +83,7 @@
 
 
 </body>
+
+<?php include '../inc/footer.php' ?>
 
 </html>

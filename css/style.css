@@ -303,6 +303,7 @@ nav[role="bottom_bar"] {
   box-sizing: border-box;
   padding: 0 100px;
   z-index: 3;
+  position: fixed;
 }
 
 nav[role="bottom_bar"] .bottom_bar_text {
@@ -980,7 +981,7 @@ nav[role="bottom_bar"] ul li a:hover {
 
 .classificacao_full table {
   width: 85%;
-  margin-top: 7%;
+  margin-top: 0%;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
@@ -998,6 +999,10 @@ nav[role="bottom_bar"] ul li a:hover {
 
 .classificacao_full  tr:nth-child(odd) {
   background-color: #d9d9d9;
+}
+
+.tab_class{
+  padding-top: 0;
 }
 
 

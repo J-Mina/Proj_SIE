@@ -21,6 +21,12 @@
                     </script>';
         }
 
+        if(isset($_GET['invalid'])){
+            echo '<script type="text/javascript">
+                    window.onload = function () { alert("Login Inválido."); } 
+                    </script>';
+        }
+
         ?>
 
         <div class="conteudo">
@@ -46,6 +52,8 @@
         </div>
 
     </body>
+
+    <?php include '../inc/footer.php' ?>
     
     
 

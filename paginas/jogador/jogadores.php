@@ -6,9 +6,15 @@
 
           <div> <?php include 'formPesquisaJogadores.php' ?></div>
           <br>
-          <div class = "pagina_classificacao"> <?php include '../../acoes/jogador/actionGetJogadores.php' ?></div>
+          
+    </div>
+    
+    <div class = "pagina_classificacao"> 
+        <?php include '../../acoes/jogador/actionGetJogadores.php' ?>
     </div>
 
 
      
 </body>
+
+<?php include '../inc/footer.php' ?>

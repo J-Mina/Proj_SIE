@@ -1,4 +1,5 @@
 <footer>
+     <br>
     <nav role="bottom_bar">
           <div class="bottom_bar_text">Sunday League</div>
          <!--  <ul>

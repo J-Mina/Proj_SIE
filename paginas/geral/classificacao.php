@@ -17,7 +17,7 @@
      <div class="pagina_classificacao">
           <div class="classificacao_full">
                <h2 id="subtitulos">classificação geral do campeonato 2022/2023</h2>
-               <table>
+               <table class="tab_class">
                     <tr>
                          <th>Nome da Equipa</th>
                          <th>Pontos</th>
@@ -59,7 +59,8 @@
 
 
 
-
 </body>
+
+<?php include '../inc/footer.php' ?>
 
 </html>

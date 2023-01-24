@@ -7,6 +7,13 @@
                     </script>';
         }
 
+        include '../../acoes/geral/checkPermissions.php';
+
+        if($permission > 4){
+          header("location: ../geral/naoTemPermissao.php");
+          exit();
+        }
+
         ?>
 
 
@@ -159,9 +166,8 @@
      </div>
 </body>
 
-<?php 
-     include "../inc/footer.php"
-?>
+<?php include "../inc/footer.php"?>
+
 
 
 </html>

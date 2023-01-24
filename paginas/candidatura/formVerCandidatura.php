@@ -1,6 +1,11 @@
 <?php include '../inc/header.php';
      include "../../acoes/geral/checkPermissions.php"; 
      include "../../baseDados/connect.php";
+
+     if($permission > 1){
+          header("location: ../geral/naoTemPermissao.php");
+          exit();
+     }
       
     $id = $_GET['id'];
      
@@ -70,5 +75,7 @@
 
 
 </body>
+
+<?php include '../inc/footer.php' ?>
 
 </html>

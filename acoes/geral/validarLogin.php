@@ -10,9 +10,11 @@
     if($count == 1) {
         session_start();
         $_SESSION['username'] = $username;
-        header("location:../../paginas/geral/index.php");
+        header("location: ../../paginas/geral/index.php");
     } else {
-        echo "Invalid Login";
-    }
+        
+        header("location:../../paginas/geral/index.php?invalid=1");
+        
+    }exit();
     pg_close($conn);
 ?>

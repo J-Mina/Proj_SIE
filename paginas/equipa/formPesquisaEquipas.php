@@ -41,4 +41,6 @@
             <input type="submit" value="Search">
         </form>
 
+        <?php include '../inc/footer.php' ?>
+
 </html>

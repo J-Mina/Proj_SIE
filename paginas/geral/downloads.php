@@ -13,7 +13,7 @@
                </div>
 
                <div class="button_over">
-                    <a href="../../css/style.css" download><button class="aparece_botao">download</button></a>
+                    <a href="../../css/style.css" download>download</a>
                </div>
           </div>
 
@@ -24,7 +24,7 @@
                </div>
 
                <div class="button_over">
-                    <a href="../../css/style.css" download><button class="aparece_botao">download</button></a>
+                    <a href="../../css/style.css" download>download</a>
                </div>
 
           </div>
@@ -36,7 +36,7 @@
                </div>
 
                <div class="button_over">
-                    <a href="../Mockup.pdf" download><button class="aparece_botao">download</button></a>
+                    <a href="../Mockup.pdf" download>download</a>
                </div>
 
           </div>

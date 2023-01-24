@@ -64,8 +64,9 @@ while($i< $numRows){
     echo    "<img src= ../".$img.">";
     echo    "<p>".$nome."</p>";
     echo    "</div>";
+
     echo    "<div class=\"button_over\">";
-    echo    "<a href = \"equipa.php?id=".$id_equipa."\">Ver Equipa</a>";
+    echo        "<a href = \"equipa.php?id=".$id_equipa."\">Ver Equipa</a>";
     echo    "</div>";
     echo "</div>";
 

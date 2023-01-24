@@ -34,16 +34,21 @@
                     convívio antes do almoço com a família.
                 </p>
                 <h2 id="subtitulos1"> Acompanha-nos !</h2>
-                <p> segue a <a href="../classificacao.php">classificação</a> e os jogos da tua equipa favorita para estares no sítio certo à hora certa.
+                <p> segue a <a href="classificacao.php">classificação</a> e os jogos da tua equipa favorita para estares no sítio certo à hora certa.
                     No fim do jogo estás mais do que convidado para te juntares ao convívio.
-                    podes também ver as  <a href="../equipas.php">equipas</a> que fazem parte do campeonato e procurar os teus amigos.
+                    podes também ver as  <a href="../equipa/equipas.php">equipas</a> que fazem parte do campeonato e procurar os teus amigos.
                 </p>
                 <h2 id="subtitulos1"> Junta-te a nós !</h2>
-                <p id="texto_junta"> entra em contacto com o presidente <a href="../contactos.php">aqui</a> ou através das nossas redes sociais
+                <p id="texto_junta"> entra em contacto com o presidente <a href="contactos.php">aqui</a> ou através das nossas redes sociais
                     para te poderes inscrever!
                 </p>
             </div>
         </div>
-        
+
     </body>
+    
+    
+
 </html>
+
+

@@ -155,15 +155,15 @@
 .display_line{
   display: flex;
   justify-content: space-between;
-  z-index: -1;
 }
 
 .element{
   position: relative;
-  z-index: -1;
 }
 
 .image{
+  opacity: 1;
+  display: block;
   text-align: center;
   align-items: center;
   color: #737373;
@@ -171,10 +171,8 @@
   width: 300px;
   background-color: #FFDE59;
   border: 2px solid gray;
-}
-
-.element:hover{
-  opacity: 0.6;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
 .element img{
@@ -194,14 +192,21 @@
   text-align: center;
 }
 
-.element:hover .button_over{
+.element:hover .image {
+  opacity: 0.3;
+}
+
+.element:hover .button_over {
   opacity: 1;
 }
 
-.button_over a{
-  background-color: #737373;
+.button_over a {
+  background-color: #a6a6a6;
+  color: white;
+  font-size: 16px;
+  padding: 4px 8px;
   border: 2px solid gray;
-  color: black;
+  font-size: 12px;
   border-radius: 30px;
   text-decoration: none;
 }
@@ -334,7 +339,6 @@ nav[role="bottom_bar"] ul li a:hover {
 /*Conteudo home*/
 
 .conteudo {
-  height: 100%;
   padding-left: 100px;
   padding-right: 100px;
   font-size: 15px;
@@ -874,8 +878,6 @@ nav[role="bottom_bar"] ul li a:hover {
 .botao button:hover {
   background-color: rgba(115, 115, 115, 1);
 }
-
-
 
 
 .candidaturaMain table, tr, td{

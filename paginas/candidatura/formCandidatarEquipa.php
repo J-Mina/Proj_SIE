@@ -29,6 +29,10 @@
                          <td> <input type="text" id="nome_cidade" name="nome_cidade"> </td>
                     </tr>
                     <tr>
+                         <td> <label for="ano_fundacao">Ano de fundação:</label> </td>
+                         <td> <input role="text" type="text" id="ano_fundacao" name="ano_fundacao"> </td>
+                    </tr>
+                    <tr>
                          <td> <label for="nome_treinador">Treinador:</label> </td>
                          <td> <input type="text" id="nome_treinador" name="nome_treinador"> </td>
                     </tr>
@@ -52,30 +56,94 @@
                          <tr>
                               <td> <label for="Jogador_1">Jogador 1: </label> </td>
                               <td> <input type="text" id="jogador_1" name="jogador_1"> </td>
+                              <td>
+                                   <select id="posicao_jogador_1" name="posicao_jogador_1">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                          <tr>
                               <td> <label for="jogador_2">Jogador 2: </label> </td>
                               <td> <input type="text" id="jogador_2" name="jogador_2"> </td>
+                              <td>
+                                   <select id="posicao_jogador_2" name="posicao_jogador_2">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
+                              
                          </tr>
                          <tr>
                               <td> <label for="jogador_3">Jogador 3: </label> </td>
                               <td> <input type="text" id="jogador_3" name="jogador_3"> </td>
+                              <td>
+                                   <select id="posicao_jogador_3" name="posicao_jogador_3">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                          <tr>
                               <td> <label for="jogador_4">Jogador 4: </label> </td>
                               <td> <input type="text" id="jogador_4" name="jogador_4"> </td>
+                              <td>
+                                   <select id="posicao_jogador_4" name="posicao_jogador_4">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                          <tr>
                               <td> <label for="jogador_5">Jogador 5: </label> </td>
                               <td> <input type="text" id="jogador_5" name="jogador_5"> </td>
+                              <td>
+                                   <select id="posicao_jogador_5" name="posicao_jogador_5">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                          <tr>
                               <td> <label for="jogador_6">Jogador 6: </label> </td>
                               <td> <input type="text" id="jogador_6" name="jogador_6"> </td>
+                              <td>
+                                   <select id="posicao_jogador_6" name="posicao_jogador_6">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                          <tr>
                               <td> <label for="jogador_7">Jogador 7: </label> </td>
                               <td> <input type="text" id="jogador_7" name="jogador_7"> </td>
+                              <td>
+                                   <select id="posicao_jogador_7" name="posicao_jogador_7">
+                                        <option value="">Selecione a Posicao</option>
+                                        <option value="1">Avançado</option>
+                                        <option value="2">Defesa</option>
+                                        <option value="3">Médio</option>
+                                        <option value="4">Guarda-Redes</option>
+                                   </select>
+                              </td>
                          </tr>
                </table>
 

@@ -40,7 +40,7 @@
                 /**Caso seja utilizador que já fez candidatura e foi recusada */             
                 }elseif($estado == 1){
                         echo    "<div class=\"msg_apr_rec\">
-                                        <p>A sua candidatura foi aprovada. Obrigado pela preferência, pode consultar a informação da sua equipa aqui</p>
+                                        <p>A sua candidatura foi aprovada. Obrigado pela preferência!</p>
                                         <p>Obrigado pela preferência, pode consultar a informação da sua equipa <a class=\"underline\" href=\"../../acoes/equipa/actionAtivarEquipa.php?id=".$id_user."\">aqui</a></p>
                                 </div>";
 

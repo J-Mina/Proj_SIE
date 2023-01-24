@@ -14,6 +14,7 @@
     $nome_treinador = $_POST['nome_treinador'];
     $descricao = $_POST['descricao'];
     $emblema = $_POST['emblema'];
+    $ano_fundacao=$_POST['ano_fundacao'];
 
 
     $jogador_1 = $_POST['jogador_1'];
@@ -23,6 +24,15 @@
     $jogador_5 = $_POST['jogador_5'];
     $jogador_6 = $_POST['jogador_6'];
     $jogador_7 = $_POST['jogador_7'];
+
+    $posicao_jogador_1=$_POST['posicao_jogador_1'];
+    $posicao_jogador_2=$_POST['posicao_jogador_2'];
+    $posicao_jogador_3=$_POST['posicao_jogador_3'];
+    $posicao_jogador_4=$_POST['posicao_jogador_4'];
+    $posicao_jogador_5=$_POST['posicao_jogador_5'];
+    $posicao_jogador_6=$_POST['posicao_jogador_6'];
+    $posicao_jogador_7=$_POST['posicao_jogador_7'];
+
 
 
     if($nome_equipa == "" || $nome_cidade=="" || $nome_treinador=="" || $descricao==""|| $emblema=="" || $jogador_1 ==""|| $jogador_2==""|| $jogador_3==""|| $jogador_4==""|| $jogador_5 ==""|| $jogador_6==""|| $jogador_7==""){
@@ -74,7 +84,7 @@
     $id_user = $row[0];
 
 
-    $query = "INSERT INTO equipa (nome, descricao, estado, id_cidade, id_user, logo_equipa, pontos, id_treinador) VALUES ('$nome_equipa', '$descricao',2, '$id_cidade' , '$id_user', '$emblema', 0, '$id_treinador')";
+    $query = "INSERT INTO equipa (nome, data_fundacao, descricao, estado, id_cidade, id_user, logo_equipa, pontos, id_treinador) VALUES ('$nome_equipa', $ano_fundacao, '$descricao',3, '$id_cidade' , '$id_user', '$emblema', 0, '$id_treinador')";
     pg_query($conn, $query);
 
     $result = pg_query($conn, "SELECT id_equipa FROM equipa WHERE nome='$nome_equipa'");
@@ -86,7 +96,9 @@
     for($i= 1; $i <= 7; $i++){
 
         $each= "jogador_".$i;
+        $posicao="posicao_jogador_".$i;
         $jogador = $_POST[$each];
+        $posicao_jogador=$_POST[$posicao];
         $username = strtolower($jogador);
         $key = str_replace(' ','_',$username);
         $query = "INSERT INTO utilizador (username, password, permissoes) VALUES ('$key', '$key', 3)";
@@ -96,7 +108,7 @@
         $row = pg_fetch_row($result, 0);
         $id_utilizador = $row[0];
 
-        $query = "INSERT INTO jogador (nome_jogador, id_equipa, id_user) VALUES ('$jogador', '$id_equipa', '$id_utilizador')";
+        $query = "INSERT INTO jogador (nome_jogador,id_posicao, id_equipa, id_user) VALUES ('$jogador','$posicao_jogador', '$id_equipa', '$id_utilizador')";
         pg_query($conn, $query);
 
     }

@@ -155,12 +155,12 @@
 .display_line{
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: -1;
 }
 
 .element{
   position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 
 .image{

@@ -5,7 +5,7 @@ include "../../baseDados/connect.php";
 
 $query = "SELECT * FROM jogador,posicao,equipa where jogador.id_posicao = posicao.id_posicao and jogador.id_equipa=equipa.id_equipa and equipa.estado=0";
 
-if(!empty($_POST['name']) || !empty($_POST['equipa']) || !empty($_POST['idade']) || !empty($_POST['pesquisarPor'])) {
+if(!empty($_POST['name']) || !empty($_POST['equipa']) || !empty($_POST['idade']) || !empty($_POST['posicao'])) {
     $query .= " AND ";
     $conditions = array();
 
@@ -21,8 +21,8 @@ if(!empty($_POST['name']) || !empty($_POST['equipa']) || !empty($_POST['idade'])
         $idade = $_POST['idade'];
         $conditions[] = "jogador.idade = '$idade'";
     }
-    if(!empty($_POST['pesquisaPor'])) {
-        $posicao = $_POST['pesquisaPor'];
+    if(!empty($_POST['posicao'])) {
+        $posicao = $_POST['posicao'];
         $conditions[] = "posicao.nome_posicao = '$posicao'";
     }
     $query .= implode(" AND ", $conditions);

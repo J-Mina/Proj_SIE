@@ -7,7 +7,7 @@
         <form class = "formPesquisaJogadores" action="jogadores.php" method="post">
             <input type="text" id="name" name="name" placeholder ="  Nome">
             &emsp;
-            <select name="pesquisaPor" id="pesquisaPor">
+            <select name="posicao" id="posicao">
                 <option value="">Posição</option>
                 <option value="Defesa"> Defesa</option>
                 <option value="Médio"> Médio</option>

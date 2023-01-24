@@ -7,11 +7,11 @@
         <form class = "formPesquisaJogadores" action="equipas.php" method="post">
             <input type="text" id="nomeEquipa" name="nomeEquipa" placeholder ="Nome da Equipa">
             &emsp;
-            <select name="pesquisaPor" id="pesquisaPor">
+            <select name="localidade" id="localidade">
                 <option value=""> Localidade</option>
-                <option value="porto"> Porto</option>
-                <option value="lisboa"> Lisboa</option>
-                <option value="braga"> Braga</option>
+                <option value="Porto"> Porto</option>
+                <option value="Lisboa"> Lisboa</option>
+                <option value="Braga"> Braga</option>
             </select>
             &emsp;
             <input type="text" id="treinador" name="treinador" placeholder="Nome Treinador">

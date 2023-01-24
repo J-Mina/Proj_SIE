@@ -7,10 +7,10 @@ include "../../baseDados/connect.php";
 /*  $query = "SELECT * FROM equipa";
 $result = pg_query($conn, $query);*/
 
-$query = "SELECT * FROM equipa";
+$query = "SELECT * FROM equipa where equipa.estado=0";
 
 if(!empty($_POST['nomeEquipa']) || !empty($_POST['fundado'])) {
-    $query .= " WHERE ";
+    $query .= " AND ";
     $conditions = array();
 
     if(!empty($_POST['nomeEquipa'])) {

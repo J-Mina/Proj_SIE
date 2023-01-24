@@ -4,14 +4,14 @@
 </head>
 
 <html>
-        <form class = "formPesquisaJogadores" action="formPesquisaJogadores.php" method="post">
+        <form class = "formPesquisaJogadores" action="jogadores.php" method="post">
             <input type="text" id="name" name="name" placeholder ="  Nome">
             &emsp;
             <select name="pesquisaPor" id="pesquisaPor">
                 <option value="">Posição</option>
-                <option value="defesa"> Defesa</option>
-                <option value="medio"> Médio</option>
-                <option value="avancado"> Avançado</option>
+                <option value="Defesa"> Defesa</option>
+                <option value="Médio"> Médio</option>
+                <option value="Avançado"> Avançado</option>
             </select>
             &emsp;
             <input type="text" id="equipa" name="equipa" placeholder="  Equipa">

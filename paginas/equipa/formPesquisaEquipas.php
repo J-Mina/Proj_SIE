@@ -4,7 +4,7 @@
 </head>
 
 <html>
-        <form class = "formPesquisaJogadores" action="../../acoes/equipa/actionGetEquipas.php" method="post">
+        <form class = "formPesquisaJogadores" action="equipas.php" method="post">
             <input type="text" id="nomeEquipa" name="nomeEquipa" placeholder ="Nome da Equipa">
             &emsp;
             <select name="pesquisaPor" id="pesquisaPor">

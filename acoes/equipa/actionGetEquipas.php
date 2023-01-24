@@ -9,7 +9,7 @@ $result = pg_query($conn, $query);*/
 
 $query = "SELECT * FROM equipa,cidade,treinador where equipa.id_treinador=treinador.id_treinador and equipa.id_cidade=cidade.id_cidade and equipa.estado=0";
 
-if(!empty($_POST['nomeEquipa']) || !empty($_POST['fundado']) || !empty($_POST['localidade']) ) {
+if(!empty($_POST['nomeEquipa']) || !empty($_POST['fundado']) || !empty($_POST['localidade']) || !empty($_POST['treinador']) ) {
     $query .= " AND ";
     $conditions = array();
 
@@ -29,7 +29,7 @@ if(!empty($_POST['nomeEquipa']) || !empty($_POST['fundado']) || !empty($_POST['l
         $treinador = $_POST['treinador'];
         $conditions[] = "nome_treinador = '$treinador'";
     }
-    
+
     $query .= implode(" AND ", $conditions);
 }
 

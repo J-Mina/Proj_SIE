@@ -67,6 +67,24 @@
   cursor: pointer;
 }
 
+
+.formLogin input[type="submit"][value="Logout"] {
+  background-color: #FFDE59;
+  color: #737373;
+  border: 0px;
+  width: 80px;
+  border-radius: 30px;
+  text-align: center; 
+  transition: all 0.3s ease 0s;  
+}
+
+.formLogin input[type="submit"][value="Logout"]:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
 /* Form pesquisa Jogadores*/
 
 .formPesquisaJogadores{
@@ -637,18 +655,7 @@ nav[role="bottom_bar"] ul li a:hover {
   width: 65%;
 }
 
-.imagem_jogador {
-  margin-top: 4%;
-  width: 400px;
-  height: 350px;
-  overflow: hidden;
-  /*background-image: url("../imagens/casillas.jpeg");*/
-  background-size: cover;
-  background-position: center center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 50%;
-}
+
 
 .informacao_jogador table {
   width: 70%;
@@ -660,6 +667,19 @@ nav[role="bottom_bar"] ul li a:hover {
 .informacao_jogador td, tr {
   text-align: left;
   border: none;
+}
+
+.imagem_jogador {
+  margin-top: 4%;
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  /*background-image: url("../imagens/casillas.jpeg");*/
+  background-size: cover;
+  background-position: center center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
 .edita_button {

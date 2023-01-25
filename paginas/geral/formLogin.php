@@ -24,7 +24,7 @@
         echo "<div class=\"loginHello\">";
         echo "Bem Vindo, ".$logged_user."!";
         echo "&emsp;";
-        echo "  <form method=\"post\" action=\"../../acoes/geral/actionLogout.php\">
+        echo "  <form class = \"formLogin\" method=\"post\" action=\"../../acoes/geral/actionLogout.php\">
                     <input type=\"submit\" name=\"logout\" value=\"Logout\">
                 </form>";  
         echo "</div>";}

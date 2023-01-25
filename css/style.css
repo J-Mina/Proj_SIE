@@ -656,6 +656,26 @@ nav[role="bottom_bar"] ul li a:hover {
 }
 
 
+.informacao_jogador form input[type="text"]{
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  
+}
+
+
+.informacao_jogador form select{
+  padding: 0px 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  
+}
+
+
 
 .informacao_jogador table {
   width: 70%;

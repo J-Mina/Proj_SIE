@@ -11,11 +11,6 @@
 
           $id = $_GET['id'];
 
-          /* $query="SELECT nome_jogador, equipa.nome as nome_equipa,logo_equipa,id_posicao
-          FROM jogador
-          JOIN equipa ON jogador.id_equipa = equipa.id_equipa
-          WHERE equipa.id_equipa=".$id; */
-
           $query = "SELECT nome_jogador, equipa.nome, equipa.logo_equipa, id_posicao, id_jogador FROM  jogador,equipa WHERE jogador.id_equipa = equipa.id_equipa and equipa.id_equipa=".$id;
 
           $result = pg_query($conn,$query);

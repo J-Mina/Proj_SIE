@@ -6,7 +6,6 @@
         $permission = 5;
     } 
     else{ 
-    
         $username = $_SESSION['username'];
         $query ="SELECT permissoes FROM utilizador where username = '$username'";
 

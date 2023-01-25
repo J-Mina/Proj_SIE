@@ -1,9 +1,5 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-</head>
 
 <html>
-
         <div class="formRegisto">
             <form action="../../acoes/geral/actionRegisto.php" method="post">
                 <table>

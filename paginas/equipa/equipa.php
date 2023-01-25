@@ -75,7 +75,7 @@
                          <a href=\"plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
                     </div>";
 
-                    if($permission <= 2 && isset($_SESSION['username'])){
+                    if($permission == 2 && isset($_SESSION['username'])){
 
                          $username = $_SESSION['username'];
                          $q= "SELECT id_equipa FROM utilizador,equipa where equipa.id_user=utilizador.id_utilizador and username ='$username'";

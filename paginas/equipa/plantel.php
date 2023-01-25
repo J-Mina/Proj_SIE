@@ -50,22 +50,17 @@
                     if( (isset($_SESSION['username']) && $permission==2)){
 
                          $username = $_SESSION['username'];
-
                          $q= "SELECT id_equipa FROM utilizador,equipa where equipa.id_user=utilizador.id_utilizador and username ='$username'";
                          $res=pg_query($conn,$q);
                          $r = pg_fetch_row($res);
                          $id_equipa = $r[0];
-
                          if($id_equipa == $id){
                               echo "<th>Editar</th>";
                          }
-
                     }elseif($permission==1){
                          echo "<th>Editar</th>";
-
                     }
                ?>
-
                </tr>
                
                <?php
@@ -76,14 +71,17 @@
                     <tr>
                          <td><?php echo $row['nome_jogador']; ?></td>
 
-                         <td><?php 
+                         <?php 
                               if($id_equipa == $id){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
+                                   echo "</td>";
                               }elseif($permission==1){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
-
+                                   echo "</td>";
                               }
-                         ?></td>
+                         ?>
                     </tr>
                <?php
                          }
@@ -112,14 +110,17 @@
                ?>
                     <tr>
                          <td><?php echo $row['nome_jogador']; ?></td>
-                         <td><?php 
+                         <?php 
                               if($id_equipa == $id){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </a> ";
+                                   echo "</td>";
                               }elseif($permission==1){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
-
+                                   echo "</td>";
                               }
-                         ?></td>
+                         ?>
                     </tr>
                <?php
                          }
@@ -147,14 +148,17 @@
                ?>
                     <tr>
                          <td><?php echo $row['nome_jogador']; ?></td>
-                         <td><?php 
+                         <?php 
                               if($id_equipa == $id){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
+                                   echo "</td>";
                               }elseif($permission==1){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
-
+                                   echo "</td>";
                               }
-                         ?></td>
+                         ?>
                     </tr>
                <?php
                          }
@@ -182,14 +186,17 @@
                ?>
                     <tr>
                          <td><?php echo $row['nome_jogador']; ?></td>
-                         <td><?php 
+                         <?php 
                               if($id_equipa == $id){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> </a>";
+                                   echo "</td>";
                               }elseif($permission==1){
+                                   echo "<td>";
                                    echo "<a href=\"../jogador/formEditaJogador.php?id=".$row['id_jogador']."\"> <i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a>";
-
+                                   echo "</td>";
                               }
-                         ?></td>
+                         ?>
                     </tr>
                <?php
                          }

@@ -31,8 +31,8 @@
 
         header("Location: ../../paginas/geral/registar.php?problem=".$problem);
         
-     }else{
-
+    }else{
+        $password = md5($password);
         $query = "INSERT INTO utilizador (username, password, permissoes) VALUES('$username','$password', 4 )";
         pg_exec($conn, $query);
 

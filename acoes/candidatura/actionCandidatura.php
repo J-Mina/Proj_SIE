@@ -101,7 +101,8 @@
         $posicao_jogador=$_POST[$posicao];
         $username = strtolower($jogador);
         $key = str_replace(' ','_',$username);
-        $query = "INSERT INTO utilizador (username, password, permissoes) VALUES ('$key', '$key', 3)";
+        $password=md5($key);
+        $query = "INSERT INTO utilizador (username, password, permissoes) VALUES ('$key', '$password', 3)";
         pg_query($conn, $query);
 
         $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$key'");

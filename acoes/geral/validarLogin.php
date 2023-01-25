@@ -5,6 +5,7 @@
 
     include "../../baseDados/connect.php";
 
+    $password = md5($password);
     $result = pg_query($conn, "SELECT * FROM utilizador WHERE username='$username' AND password='$password'");
     $count = pg_num_rows($result);
     if($count == 1) {

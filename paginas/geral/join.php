@@ -2,12 +2,11 @@
         include '../../acoes/geral/checkPermissions.php';
         include '../../baseDados/connect.php';
 
-        if(isset($_SESSION['username'])){
+        if(isset($_SESSION['username']) && ($permission >= 4)){
                 $username = $_SESSION['username'];
                 $result = pg_query($conn, "SELECT * FROM utilizador WHERE username='$username'");
                 $row = pg_fetch_row($result, 0);
                 $id_user = $row[0];
-                $permissoes = $row[3];
 
                 $result = pg_query($conn, "SELECT estado FROM equipa WHERE id_user=$id_user");
                 $numRows = pg_numrows($result);

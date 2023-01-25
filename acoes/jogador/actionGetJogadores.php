@@ -29,13 +29,14 @@ if(!empty($_POST['name']) || !empty($_POST['equipa']) || !empty($_POST['idade'])
 }
 
 
+
 $result = pg_query($conn, $query);
 pg_close($conn);
 
 
 echo "<table class=\"classificacao_full\">";
 echo      "<tr>";
-echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th>";
+echo          "<th>Nome</th><th>Idade</th><th>Altura</th><th>Posição</th><th>Equipa</th><th>Ver Jogador</th>";
             if($permission == 1){
 echo             "<th>Editar</th>";}
 echo      "</tr>";
@@ -61,7 +62,7 @@ while($i< $numRows){
              <td>".$altura."</td>
              <td>".$posicao."</td>
              <td>".$equipa."</td>";
-
+    echo"<td><a href=\"../jogador/jogador.php?id=".$id."\"> <i class=\"fa fa-search\" aria-hidden=\"true\"></i> </a></td>";
              
              if($permission == 1){
     echo    "<td><a href=\"../jogador/formEditaJogador.php?id=".$id."\"> Editar </a></td>";

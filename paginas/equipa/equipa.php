@@ -3,8 +3,10 @@
      include "../../baseDados/connect.php";
       
 
-     
-     if(isset($_SESSION['username']) && $permission == 2){
+     if(isset($_GET['id'])){
+          $id = $_GET['id'];
+     }
+     elseif(isset($_SESSION['username']) && $permission <= 2){
           $username = $_SESSION['username'];
           $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
           $row = pg_fetch_row($result, 0);
@@ -14,7 +16,8 @@
           $id = $row[0]; 
 
      }else{
-       $id = $_GET['id'];
+          header("location: ../geral/index.php");
+          exit();
      }   
      
 

@@ -5,9 +5,7 @@
      <div class="conteudo"> 
           
           <?php include 'formPesquisaEquipas.php' ?>
-
           <br>
-
           <?php include '../../acoes/equipa/actionGetEquipas.php' ?>
      </div>
 </body>

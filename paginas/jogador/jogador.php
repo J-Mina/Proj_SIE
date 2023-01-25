@@ -1,7 +1,8 @@
 <?php include '../inc/header.php'; 
+     include '../../acoes/geral/checkPermissions.php';
      include "../../baseDados/connect.php";
 
-     if(isset($_SESSION['username'])){
+      if(isset($_SESSION['username']) && $permission == 3){
           $username = $_SESSION['username'];
           $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
           $row = pg_fetch_row($result, 0);
@@ -10,9 +11,13 @@
           $row = pg_fetch_row($result, 0);
           $id = $row[0]; 
 
-     }else{
+     
+      }elseif(isset($_GET['id'])){
        $id = $_GET['id'];   
-     }
+     }else{
+          header("location: ../geral/index.php");
+          exit();
+     }  
 
      $query="SELECT id_jogador,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa, foto_jogador
              FROM jogador
@@ -68,7 +73,7 @@
 
                include "../../acoes/geral/checkPermissions.php"; 
 
-               if($permission > 2){
+               if($permission < 2){
 
                     echo "<div class=\"button_back\">
                      <a href=\"formEditaJogador.php?id=".$id."\"><button>Editar info</button></a>

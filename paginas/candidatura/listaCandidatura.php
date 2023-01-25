@@ -1,8 +1,6 @@
 <?php include '../inc/header.php' ?>
 
     
-
-
     <?php
         include "../../acoes/geral/checkPermissions.php"; 
 

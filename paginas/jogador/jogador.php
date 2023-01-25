@@ -24,7 +24,7 @@
           exit();
      }  
 
-     $query="SELECT id_jogador,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa, foto_jogador
+     $query="SELECT id_jogador, equipa.id_equipa as istoeoid,nome_jogador,idade, altura, clube_ant,posicao.nome_posicao as posicao, equipa.nome as nome_equipa, foto_jogador
              FROM jogador
              JOIN posicao ON jogador.id_posicao = posicao.id_posicao
              JOIN equipa ON jogador.id_equipa = equipa.id_equipa 
@@ -50,7 +50,7 @@
           <div class="informacao_jogador">
                <?php
                     echo "<div class=\"button_back\">
-                         <a href=\"jogadores.php?id=".$id."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
+                         <a href=\"../equipa/plantel.php?id=".$player['istoeoid']."\"><button><i class=\"fa fa-arrow-circle-left\" aria-hidden=\"true\"></i> Voltar</button></a>
                     </div>"
                ?>
                

@@ -1061,5 +1061,16 @@ color:rgba(115, 115, 115, 1);
   width: 250px;
 }
 
+.tab_class input[type="text"]{
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 20px;
+  text-align: center;
+  width: 10%;
+  background-color: transparent;
+}
+
 
 

@@ -1,4 +1,5 @@
 <?php include '../inc/header.php';
+      include "../../acoes/geral/checkPermissions.php";
       include "../../baseDados/connect.php";
 
           $query="SELECT nome as nome_equipa, pontos
@@ -9,10 +10,7 @@
 
           $numRows = pg_numrows($result);
           $i=0;
-
  ?>
-
-
 
      <div class="pagina_classificacao">
           <div class="classificacao_full">
@@ -30,34 +28,14 @@
                     <?php endwhile; ?>
                </table>
           </div>
-
-
-          <!-- <div class="calendario">
-               <h2 id="subtitulos">Próximos Jogos</h2>
-
-               <div class="prox_jogos">
-
-                    <div class="jogo">
-                         <img src="../../imagens/chamines.png" alt="chamines_as_costas">
-                         <img src="../../imagens/rebenta.png" alt="rebenta_esteios">
-                         <p> 12 OUT </p>
-                         <p>Chaminés As costas vs rebenta esteios
-                         <p>
-                    </div>
-
-                    <div class="jogo">
-                         <img src="../../imagens/estrelas.png" alt="estrelas_cadentes">
-                         <img src="../../imagens/panteras.png" alt="panteras_negras">
-                         <p> 12 OUT </p>
-                         <p>Estrelas Cadentes vs Panteras Negras
-                         <p>
-                    </div>
-
-               </div>
-          </div> -->
      </div>
 
-
+     <?php
+     if($permission == 1){
+          echo "<div class=\"join_cont\">";
+          echo "<p><a href=\"../equipa/formClassificacao.php\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i> Editar </a></p>";
+          echo "</div>";
+     }?>
 
 </body>
 

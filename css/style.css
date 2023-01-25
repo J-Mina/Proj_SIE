@@ -20,6 +20,7 @@
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
+  text-decoration: none;
 }
 
 .titulo{
@@ -29,12 +30,19 @@
   margin-right: 16px;
 }
 
+.titulo a {
+  color: #FFDE59;
+  text-decoration: none;
+  
+}
+
 /* Login form -->*/
 
 .formLogin{
   display: flex;
   flex-direction: line;
   align-items: center;
+  text-decoration: none;
 }
 
 .formLogin input[type=text]{
@@ -207,7 +215,7 @@
 }
 
 .element:hover .image {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .element:hover .button_over {

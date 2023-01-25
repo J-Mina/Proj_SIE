@@ -679,7 +679,7 @@ nav[role="bottom_bar"] ul li a:hover {
 
 
 .informacao_jogador table {
-  width: 70%;
+  width: 60%;
   border-collapse: collapse;
   border: none;
   margin-top: 12%;
@@ -688,6 +688,7 @@ nav[role="bottom_bar"] ul li a:hover {
 .informacao_jogador td, tr {
   text-align: left;
   border: none;
+  padding: 3px;
 }
 
 .imagem_jogador {

@@ -19,8 +19,8 @@
 
           <div class="element">
                <div class="image">
-                    <img src="../../imagens/html.png" alt="codigohtml">
-                    <p style="color:black;">Codigo HTML</p>
+                    <img src="../../imagens/projeto.png" alt="codigohtml">
+                    <p style="color:black;">Código HTML</p>
                </div>
 
                <div class="button_over">

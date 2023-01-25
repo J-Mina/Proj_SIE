@@ -37,9 +37,6 @@
      <div class="pagina_jogador">
 
 
-          <!-- <div class="imagem_jogador" style="background-image: url('<?php echo "../".$player['logo_equipa']; ?>');">
-               <img src="/..<?php?>" alt="">
-          </div> -->
 
           <?php
 

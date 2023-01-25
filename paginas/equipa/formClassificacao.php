@@ -7,7 +7,7 @@
 
           $result = pg_query($conn,$query);
 
-          $numRows = pg_numrows($result);
+          $numRows = pg_num_rows($result);
           $i=0;
  ?>
 

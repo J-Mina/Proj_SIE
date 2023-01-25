@@ -1072,5 +1072,13 @@ color:rgba(115, 115, 115, 1);
   background-color: transparent;
 }
 
+.resolucao{
+  color: #FFDE59;
+  float: right;
+  font-size: 20px;
+  padding: 0;
+  line-height: 30px;
+}
+
 
 

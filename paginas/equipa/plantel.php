@@ -19,7 +19,7 @@
           $numRows = pg_numrows($result);
           $i=0;
 
- ?>
+?>
 
      <h2 id="subtitulos2">Plantel equipa <?php echo $player['nome']; ?></h2>
 

@@ -31,6 +31,12 @@
 
 /* Login form -->*/
 
+.formLogin{
+  display: flex;
+  flex-direction: line;
+  align-items: center;
+}
+
 .formLogin input[type=text]{
   width: 120px;
   height: 30px;
@@ -42,7 +48,6 @@
   height: 30px;
   border-radius: 30px;
 }
-
 .formLogin label{
   color: #FFDE59;
 }
@@ -51,16 +56,15 @@
   background-color: #FFDE59;
   color: #737373;
   border: 0px;
-  height: 28px;
-  width: 60px;
+  width: 80px;
   border-radius: 30px;
-  text-align: center;   
+  text-align: center; 
+  transition: all 0.3s ease 0s;  
 }
 
 .formLogin input:hover[type=submit]{
-  background-color: #737373;
-  color: #FFDE59;
-  border: 2px solid #FFDE59;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* Form pesquisa Jogadores*/

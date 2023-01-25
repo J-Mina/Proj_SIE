@@ -75,9 +75,28 @@
                          <a href=\"plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
                     </div>";
 
-                    echo "<div class=\"button_back\">
-                         <a href=\"formEditaEquipa.php?id=".$id."\"><button>Alterar Informação</button></a>
-                    </div>";
+                    if($permission <= 2 && isset($_SESSION['username'])){
+
+                         $username = $_SESSION['username'];
+                         $q= "SELECT id_equipa FROM utilizador,equipa where equipa.id_user=utilizador.id_utilizador and username ='$username'";
+                         $res=pg_query($conn,$q);
+                         $r = pg_fetch_row($res);
+                         $id_equipa = $r[0];
+
+                         if($id_equipa == $id){
+
+                             echo "<div class=\"button_back\">
+                                   <a href=\"formEditaEquipa.php?id=".$id."\"><button>Alterar Informação</button></a>
+                              </div>";  
+                         }
+                          
+                    }elseif($permission == 1){
+                         echo "<div class=\"button_back\">
+                                   <a href=\"formEditaEquipa.php?id=".$id."\"><button>Alterar Informação</button></a>
+                              </div>";  
+                    }
+
+                    
                ?>
           </div>
 

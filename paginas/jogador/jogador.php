@@ -2,7 +2,14 @@
      include '../../acoes/geral/checkPermissions.php';
      include "../../baseDados/connect.php";
 
-      if(isset($_SESSION['username']) && $permission == 3){
+     $id_user = -1;
+
+      if(isset($_GET['id'])){
+       $id = $_GET['id'];
+          
+     }
+
+     elseif(isset($_SESSION['username']) && $permission == 3){
           $username = $_SESSION['username'];
           $result = pg_query($conn, "SELECT id_utilizador FROM utilizador WHERE username='$username'");
           $row = pg_fetch_row($result, 0);
@@ -12,8 +19,6 @@
           $id = $row[0]; 
 
      
-      }elseif(isset($_GET['id'])){
-       $id = $_GET['id'];   
      }else{
           header("location: ../geral/index.php");
           exit();
@@ -71,13 +76,25 @@
 
                <?php
 
-               include "../../acoes/geral/checkPermissions.php"; 
-
                if($permission < 2){
 
                     echo "<div class=\"button_back\">
                      <a href=\"formEditaJogador.php?id=".$id."\"><button>Editar info</button></a>
                     </div>";
+               }elseif(isset($_SESSION['username']) && $permission == 3){
+
+                    $username = $_SESSION['username'];
+                    $q= "SELECT utilizador.id_utilizador FROM utilizador,jogador where jogador.id_user=utilizador.id_utilizador and username ='$username'";
+                    $res=pg_query($conn,$q);
+                    $r = pg_fetch_row($res);
+                    $id_u = $r[0];
+
+                    if($id_u == $id_user){
+                         echo "<div class=\"button_back\">
+                              <a href=\"formEditaJogador.php?id=".$id."\"><button>Editar info</button></a>
+                              </div>";
+                    }
+
                }
 
                

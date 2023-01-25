@@ -2,7 +2,7 @@
      include "../../acoes/geral/checkPermissions.php"; 
      include "../../baseDados/connect.php";
 
-     if($permission == 1){
+     if($permission > 1){
           header("location: ../geral/naoTemPermissao.php");
           exit();
      }

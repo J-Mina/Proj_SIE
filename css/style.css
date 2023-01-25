@@ -598,6 +598,7 @@ nav[role="bottom_bar"] ul li a:hover {
   margin-top: 2%;
   border: 3px solid #FFDE59;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .pagina_plantel tr, td, th {

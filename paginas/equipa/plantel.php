@@ -43,7 +43,7 @@
 
           <img src=<?php echo "../".$player['logo_equipa']; ?>>
 
-          <table>
+          <table class="pagina_plantel">
                <tr>
                <th>Guarda-Redes</th>
                <?php 
@@ -69,7 +69,9 @@
                          if ($row['id_posicao'] == 4) {
                ?>
                     <tr>
-                         <td><?php echo $row['nome_jogador']; ?></td>
+                         <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
+                              <?php echo $row['nome_jogador']; ?>
+                         </td>
 
                          <?php 
                               if($id_equipa == $id){
@@ -89,7 +91,7 @@
                ?>
           </table>
 
-          <table>
+          <table class="pagina_plantel">
                <tr>
                <th>Defesa</th>
                <?php 
@@ -109,7 +111,10 @@
                          if ($row['id_posicao'] ==2) {
                ?>
                     <tr>
-                         <td><?php echo $row['nome_jogador']; ?></td>
+                         <td>
+                              <a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
+                              <?php echo $row['nome_jogador']; ?>
+                         </td>
                          <?php 
                               if($id_equipa == $id){
                                    echo "<td>";
@@ -128,7 +133,7 @@
                ?>
           </table>
 
-          <table>
+          <table class="pagina_plantel">
                <tr>
                <th>Médio</th>
                <?php 
@@ -147,7 +152,9 @@
                          if ($row['id_posicao'] ==3) {
                ?>
                     <tr>
-                         <td><?php echo $row['nome_jogador']; ?></td>
+                         <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
+                              <?php echo $row['nome_jogador']; ?>
+                         </td>
                          <?php 
                               if($id_equipa == $id){
                                    echo "<td>";
@@ -166,7 +173,7 @@
                ?>
           </table>
 
-          <table>
+          <table class="pagina_plantel">
                <tr>
                <th>Avançado</th>
                <?php 
@@ -185,7 +192,9 @@
                          if ($row['id_posicao'] ==1) {
                ?>
                     <tr>
-                         <td><?php echo $row['nome_jogador']; ?></td>
+                         <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
+                              <?php echo $row['nome_jogador']; ?>
+                         </td>
                          <?php 
                               if($id_equipa == $id){
                                    echo "<td>";

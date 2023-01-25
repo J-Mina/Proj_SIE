@@ -60,10 +60,6 @@
                               </select>
                          </td>
                     </tr>
-                    <tr>
-                         <td><b>Equipa atual:</b></td>
-                         <td><input type="text" name="nome_equipa" value="<?php echo $player['nome_equipa']; ?>"></td>
-                    </tr>
                     
                     
                </table>

@@ -13,7 +13,7 @@
 
      <div class="top_bar">
           <div class="titulo">
-               <h1>Sunday League </h1>
+               <h1><a href="../geral/index.php">Sunday League </a></h1>
           </div>
           <div> <?php include '../../paginas/geral/formLogin.php' ?></div>
 

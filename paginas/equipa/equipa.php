@@ -70,7 +70,11 @@
                <?php
                     echo "<div class=\"button_back\">
                          <a href=\"plantel.php?id=".$id."\"><button> Ver Plantel</button></a>
-                    </div>"
+                    </div>";
+
+                    echo "<div class=\"button_back\">
+                         <a href=\"formEditaEquipa.php?id=".$id."\"><button>Alterar Informação</button></a>
+                    </div>";
                ?>
           </div>
 

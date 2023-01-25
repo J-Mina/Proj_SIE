@@ -773,6 +773,9 @@ nav[role="bottom_bar"] ul li a:hover {
   align-items: center;
 }
 
+.formCandidatura label{
+color:rgba(115, 115, 115, 1);
+}
 
 .formCandidatura input[type=text]{
   border: 2px solid gray;

@@ -3,7 +3,7 @@
 
 <html>
         <form class = "formPesquisaJogadores" action="equipas.php" method="post">
-            <input type="text" id="nomeEquipa" name="nomeEquipa" placeholder ="Nome da Equipa">
+            <input type="text" id="nomeEquipa" name="nomeEquipa" placeholder ="  Nome da Equipa">
             &emsp;
             <select name="localidade" id="localidade">
                 <option value=""> Localidade</option>
@@ -16,7 +16,7 @@
                 ?>
             </select>
             &emsp;
-            <input type="text" id="treinador" name="treinador" placeholder="Nome Treinador">
+            <input type="text" id="treinador" name="treinador" placeholder="  Nome Treinador">
             &emsp;
             <select name="fundado" id="fundado">
                 <option value=""> Ano de fundação</option>

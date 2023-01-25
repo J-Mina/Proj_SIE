@@ -690,6 +690,7 @@ nav[role="bottom_bar"] ul li a:hover {
 }
 
 .imagem_jogador {
+  padding-top: 40px;
   margin-top: 4%;
   width: 400px;
   height: 350px;
@@ -699,6 +700,7 @@ nav[role="bottom_bar"] ul li a:hover {
   margin-right: auto;
   border-radius: 50%;
   object-fit: cover;
+  text-align: center;
 }
 
 .edita_button {
@@ -1051,6 +1053,10 @@ color:rgba(115, 115, 115, 1);
 .name_logged{
 
   color: #FFDE59;
+}
+
+.perfil{
+  width: 250px;
 }
 
 

@@ -38,7 +38,14 @@
 
 
      <div class="pagina_jogador">
-          <div class="imagem_jogador" style="background-image: url('<?php echo "../".$player['foto_jogador']; ?>');"></div>
+
+          <?php
+
+          echo "<div class=\"imagem_jogador\" >
+                    <img class=\"perfil\" src=\"../".$player['foto_jogador']."\" >
+               </div>";
+
+          ?>
 
           <div class="informacao_jogador">
                <?php

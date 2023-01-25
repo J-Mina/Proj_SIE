@@ -69,7 +69,7 @@
 
                     <tr>
                          <td><b>Pagina pessoal:</b></td>
-                         <td style="color:#737373"><a href="https://sigarra.up.pt/feup/pt/fest_geral.cursos_list?pv_num_unico=201806871">link</a></td>
+                         <td style="color:#737373"><a href="https://sigarra.up.pt/feup/pt/fest_geral.cursos_list?pv_num_unico=201806850">link</a></td>
                     </tr>
 
                </table>

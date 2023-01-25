@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" type="text/css" href="../../css/style.css">
-</head>
 
 <?php
     session_start();
@@ -15,14 +12,16 @@
         &emsp;
         <input type="submit" value="Login">
     </form>
+    <a href="alterarPassword.php"></a>
 
 <?php
     } 
-    else{ $logged_user = $_SESSION['username'];
+    else{ 
+        $logged_user = $_SESSION['username'];
 
 
         echo "<div class=\"loginHello\">";
-        echo "Bem Vindo, ".$logged_user."!";
+        echo "Bem Vindo, &nbsp; <a class=\"name_logged\" href=\"../../paginas/geral/alterarPassword.php\"> ".$logged_user."</a>&nbsp;!";
         echo "&emsp;";
         echo "  <form class = \"formLogin\" method=\"post\" action=\"../../acoes/geral/actionLogout.php\">
                     <input type=\"submit\" name=\"logout\" value=\"Logout\">

@@ -44,10 +44,22 @@
                     No fim do jogo estás mais do que convidado para te juntares ao convívio.
                     podes também ver as  <a href="../equipa/equipas.php">equipas</a> que fazem parte do campeonato e procurar os teus amigos.
                 </p>
+
+                <h2 id="subtitulos"> Credenciais de acesso !</h2>
+                <p>Para aceder sendo o administrador: username= admin ; pass= admin;</p>
+                <p>Para aceder sendo o equipa: username= pedechumbo ; pass= pedechumbo;</p>
+                <p>Para aceder como jogador: username= costa ; pass= costa; </p>
+                <p>Para poder candidatar uma equipa tem que se registar sem estar autenticado;</p>
+                <p>Assim que o administrador aprovar a candidatura o user de quem se candidatou passa a ser de equipa
+                     (são geradas contas dos jogadores com pass e username igual ao nome que depois devem ser alteradas por cada jogador.</p>
+
                 <h2 id="subtitulos1"> Junta-te a nós !</h2>
                 <p id="texto_junta"> entra em contacto com o presidente <a href="contactos.php">aqui</a> ou através das nossas redes sociais
                     para te poderes inscrever!
                 </p>
+
+
+                <br>
             </div>
         </div>
 

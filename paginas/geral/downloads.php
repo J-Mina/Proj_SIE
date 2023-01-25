@@ -20,11 +20,11 @@
           <div class="element">
                <div class="image">
                     <img src="../../imagens/projeto.png" alt="codigohtml">
-                    <p style="color:black;">Código HTML</p>
+                    <p style="color:black;">Projeto</p>
                </div>
 
                <div class="button_over">
-                    <a href="../../css/style.css" download>download</a>
+                    <a href="../../Proj_SIE.zip" download>download</a>
                </div>
 
           </div>
@@ -36,7 +36,7 @@
                </div>
 
                <div class="button_over">
-                    <a href="../Mockup.pdf" download>download</a>
+                    <a href="../../Mockup.pdf" download>download</a>
                </div>
 
           </div>

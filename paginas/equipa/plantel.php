@@ -71,6 +71,7 @@
                     <tr>
                          <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
                               <?php echo $row['nome_jogador']; ?>
+                              </a>
                          </td>
 
                          <?php 
@@ -114,6 +115,7 @@
                          <td>
                               <a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
                               <?php echo $row['nome_jogador']; ?>
+                              </a>
                          </td>
                          <?php 
                               if($id_equipa == $id){
@@ -154,6 +156,7 @@
                     <tr>
                          <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
                               <?php echo $row['nome_jogador']; ?>
+                              </a>
                          </td>
                          <?php 
                               if($id_equipa == $id){
@@ -194,6 +197,7 @@
                     <tr>
                          <td><a href="../jogador/jogador.php?id=<?php echo $row['id_jogador']; ?>">
                               <?php echo $row['nome_jogador']; ?>
+                              </a>
                          </td>
                          <?php 
                               if($id_equipa == $id){

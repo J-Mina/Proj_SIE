@@ -77,7 +77,11 @@
                     </tr>
                     <tr>
                          <td><b>Equipa atual</b></td>
-                         <td style="color:#737373"><?php echo $player['nome_equipa']; ?></td>
+                         <td style="color:#737373">
+                              <a href="../equipa/equipa.php?id=<?php echo $player['istoeoid']; ?>">
+                              <?php echo $player['nome_equipa']; ?>
+                              </a>
+                         </td>
                     </tr>
                </table>
 
